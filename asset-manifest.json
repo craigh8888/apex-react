@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/apex-react/static/css/main.7e26a7f6.css",
+    "main.js": "/apex-react/static/js/main.34707538.js",
+    "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
+    "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
+    "static/media/arweave.svg": "/apex-react/static/media/arweave.5e9d962f63fe331b8acde395e3083e20.svg",
+    "static/media/metamask-logo.svg": "/apex-react/static/media/metamask-logo.10759bac87529c8d829aba44d3fd6e05.svg",
+    "static/media/mail.svg": "/apex-react/static/media/mail.aaac1b18b57042646eb50d79081b0810.svg",
+    "static/media/discord.svg": "/apex-react/static/media/discord.95c789de92fb8ef1c6c1e189e5014f58.svg",
+    "static/media/m.svg": "/apex-react/static/media/m.a244c2695ef4f5027def91c98de61d7b.svg",
+    "static/media/twitter.svg": "/apex-react/static/media/twitter.6de0982978f3dd3a8152e91b4b07f1c3.svg",
+    "static/media/apex-logo-lrge.svg": "/apex-react/static/media/apex-logo-lrge.5ffe147c95b8c40cf07a8242d00c09a1.svg",
+    "static/media/SidebarLogo.svg": "/apex-react/static/media/SidebarLogo.4be318a23449d6463deeb395e2f1419a.svg",
+    "static/media/apex-logo.svg": "/apex-react/static/media/apex-logo.4be318a23449d6463deeb395e2f1419a.svg",
+    "static/media/icon-archive.svg": "/apex-react/static/media/icon-archive.2a2c46cadad352e4146b94aa888e33c2.svg",
+    "static/media/icon-settings.svg": "/apex-react/static/media/icon-settings.fd634ec397f0c85aa66094a85325c6bd.svg",
+    "static/media/apple.svg": "/apex-react/static/media/apple.14c7055e49b8358e92f3f5c67f326ade.svg",
+    "static/media/files-icon.svg": "/apex-react/static/media/files-icon.3bb2d1f63322120ca7cf1a862d338cfe.svg",
+    "static/media/upload-files.svg": "/apex-react/static/media/upload-files.799b799946d7b6dd4a0651d3788996c3.svg",
+    "static/media/add-folder.svg": "/apex-react/static/media/add-folder.32efc46a06f52045474482021ae7fcf7.svg",
+    "static/media/icon-folder-blue.svg": "/apex-react/static/media/icon-folder-blue.beeef64c0e8895b820b369d66cab27fe.svg",
+    "static/media/folder-light-blue.svg": "/apex-react/static/media/folder-light-blue.96bfd73ddf2ad69235bde65483548765.svg",
+    "static/media/icon-folder.svg": "/apex-react/static/media/icon-folder.4baadd5022b8c724569f203b07de7064.svg",
+    "static/media/google.svg": "/apex-react/static/media/google.076789828145e58adc1b25d46bd0380c.svg",
+    "static/media/image.svg": "/apex-react/static/media/image.1af4ac1806038048c77327826f049976.svg",
+    "static/media/icon-star.svg": "/apex-react/static/media/icon-star.2799d0f2d88bde612266f63206e83dcd.svg",
+    "static/media/icon-plus.svg": "/apex-react/static/media/icon-plus.b17cd23eefe88e0add7434af314e8bf6.svg",
+    "static/media/image-bg.svg": "/apex-react/static/media/image-bg.086bd78f6cb0bdab6262.svg",
+    "index.html": "/apex-react/index.html",
+    "static/media/facebook.svg": "/apex-react/static/media/facebook.420db15dc899c08935626876b5586f68.svg",
+    "static/media/right-arrow.svg": "/apex-react/static/media/right-arrow.6ea36c1f68ad67beb3b807695dbf9283.svg",
+    "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
+    "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
+    "main.7e26a7f6.css.map": "/apex-react/static/css/main.7e26a7f6.css.map",
+    "main.34707538.js.map": "/apex-react/static/js/main.34707538.js.map",
+    "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e26a7f6.css",
+    "static/js/main.34707538.js"
+  ]
+}

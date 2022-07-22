@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apex-react/static/css/main.f8411b5f.css",
-    "main.js": "/apex-react/static/js/main.308d6a13.js",
+    "main.css": "/apex-react/static/css/main.dbf56a83.css",
+    "main.js": "/apex-react/static/js/main.59e9b4db.js",
     "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
     "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
     "static/media/arweave.svg": "/apex-react/static/media/arweave.5e9d962f63fe331b8acde395e3083e20.svg",
@@ -25,6 +25,7 @@
     "static/media/icon-folder.svg": "/apex-react/static/media/icon-folder.4baadd5022b8c724569f203b07de7064.svg",
     "static/media/google.svg": "/apex-react/static/media/google.076789828145e58adc1b25d46bd0380c.svg",
     "static/media/image.svg": "/apex-react/static/media/image.1af4ac1806038048c77327826f049976.svg",
+    "static/media/nft-viewer.svg": "/apex-react/static/media/nft-viewer.805e0a2aaf5079f5c72185c8fe1e24d6.svg",
     "static/media/icon-star.svg": "/apex-react/static/media/icon-star.2799d0f2d88bde612266f63206e83dcd.svg",
     "static/media/icon-plus.svg": "/apex-react/static/media/icon-plus.b17cd23eefe88e0add7434af314e8bf6.svg",
     "static/media/image-bg.svg": "/apex-react/static/media/image-bg.086bd78f6cb0bdab6262.svg",
@@ -33,12 +34,12 @@
     "static/media/right-arrow.svg": "/apex-react/static/media/right-arrow.6ea36c1f68ad67beb3b807695dbf9283.svg",
     "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
     "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
-    "main.f8411b5f.css.map": "/apex-react/static/css/main.f8411b5f.css.map",
-    "main.308d6a13.js.map": "/apex-react/static/js/main.308d6a13.js.map",
+    "main.dbf56a83.css.map": "/apex-react/static/css/main.dbf56a83.css.map",
+    "main.59e9b4db.js.map": "/apex-react/static/js/main.59e9b4db.js.map",
     "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8411b5f.css",
-    "static/js/main.308d6a13.js"
+    "static/css/main.dbf56a83.css",
+    "static/js/main.59e9b4db.js"
   ]
 }

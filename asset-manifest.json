@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apex-react/static/css/main.dbf56a83.css",
-    "main.js": "/apex-react/static/js/main.59e9b4db.js",
+    "main.js": "/apex-react/static/js/main.ba95e49f.js",
     "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
     "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
     "static/media/arweave.svg": "/apex-react/static/media/arweave.5e9d962f63fe331b8acde395e3083e20.svg",
@@ -24,6 +24,7 @@
     "static/media/folder-light-blue.svg": "/apex-react/static/media/folder-light-blue.96bfd73ddf2ad69235bde65483548765.svg",
     "static/media/icon-folder.svg": "/apex-react/static/media/icon-folder.4baadd5022b8c724569f203b07de7064.svg",
     "static/media/google.svg": "/apex-react/static/media/google.076789828145e58adc1b25d46bd0380c.svg",
+    "static/media/nft-actions.svg": "/apex-react/static/media/nft-actions.9d2f28864504c2fc6977ef33b0fd9bbd.svg",
     "static/media/image.svg": "/apex-react/static/media/image.1af4ac1806038048c77327826f049976.svg",
     "static/media/nft-viewer.svg": "/apex-react/static/media/nft-viewer.805e0a2aaf5079f5c72185c8fe1e24d6.svg",
     "static/media/icon-star.svg": "/apex-react/static/media/icon-star.2799d0f2d88bde612266f63206e83dcd.svg",
@@ -35,11 +36,11 @@
     "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
     "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
     "main.dbf56a83.css.map": "/apex-react/static/css/main.dbf56a83.css.map",
-    "main.59e9b4db.js.map": "/apex-react/static/js/main.59e9b4db.js.map",
+    "main.ba95e49f.js.map": "/apex-react/static/js/main.ba95e49f.js.map",
     "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dbf56a83.css",
-    "static/js/main.59e9b4db.js"
+    "static/js/main.ba95e49f.js"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/apex-react/static/css/main.96b9f314.css",
+    "main.css": "/apex-react/static/css/main.aa3b7e61.css",
     "main.js": "/apex-react/static/js/main.3042ea45.js",
     "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
     "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
@@ -35,12 +35,12 @@
     "static/media/right-arrow.svg": "/apex-react/static/media/right-arrow.6ea36c1f68ad67beb3b807695dbf9283.svg",
     "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
     "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
-    "main.96b9f314.css.map": "/apex-react/static/css/main.96b9f314.css.map",
+    "main.aa3b7e61.css.map": "/apex-react/static/css/main.aa3b7e61.css.map",
     "main.3042ea45.js.map": "/apex-react/static/js/main.3042ea45.js.map",
     "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b9f314.css",
+    "static/css/main.aa3b7e61.css",
     "static/js/main.3042ea45.js"
   ]
 }

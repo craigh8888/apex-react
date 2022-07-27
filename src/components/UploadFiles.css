@@ -111,3 +111,10 @@ button.close {
 .upload-box-wrapper {
     text-align: center;
 }
+
+@media (max-width: 769px) {
+    div#popup-root div#popup-1 {
+        max-width: 95%;
+        width: 100%;
+    }
+}

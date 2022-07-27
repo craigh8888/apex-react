@@ -13,23 +13,23 @@ function SidebarNav() {
     return (
         <div className='sidebar-nav-wrap'>
             <div className='item-wrap'>
-                <Link to="#"><span class="svgwrap"><FilesLogo /></span>All Files</Link>
+                <Link to="#"><span className="svgwrap"><FilesLogo /></span>All Files</Link>
             </div>
 
             <div className='item-wrap'>
-                <Link to="#"><span class="svgwrap"><StarIcon /></span>Favourites</Link>
+                <Link to="#"><span className="svgwrap"><StarIcon /></span>Favourites</Link>
             </div>
 
             <div className='item-wrap'>
-                <Link to="#"><span class="svgwrap"><FoldersIcon /></span>Folders <span className='plus'><PlusIcon /></span></Link>
+                <Link to="#"><span className="svgwrap"><FoldersIcon /></span>Folders <span className='plus'><PlusIcon /></span></Link>
             </div>
 
             <div className='item-wrap'>
-                <Link to="#"><span class="svgwrap"><ArchiveIcon /></span>Archive</Link>
+                <Link to="#"><span className="svgwrap"><ArchiveIcon /></span>Archive</Link>
             </div>
 
             <div className='item-wrap'>
-                <Link to="#"><span class="svgwrap"><SettingsIcon /></span>Billing & Settings</Link>
+                <Link to="#"><span className="svgwrap"><SettingsIcon /></span>Billing & Settings</Link>
             </div>
         </div>
     );

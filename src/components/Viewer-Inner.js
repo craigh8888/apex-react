@@ -191,10 +191,7 @@ function ViewerInner() {
                                 <div className="breadcrumb-trail">
                                     <span>All Files</span>
                                 </div>
-                                <div className="button-wrap">
-                                    <button className=" button-top add-folder">Add Folder <ButtonAddFolderIcon /></button>
-                                    <button className="button-top upload-files">Upload Files  <ButtonUploadFilesIcon /></button>
-                                </div>
+
 
                             </div>
                             <table className="blueTable title-section">
@@ -243,74 +240,119 @@ function ViewerInner() {
                                     </tr>
                                     <tr>
 
-                                        <td className="variable-width name">Customer  Testimonials.docx</td>
-                                        <td>Marketing</td>
-                                        <td>Thursday 12th January 2020</td>
-                                        <td>12.3mb</td>
-                                        <td><Link className="view-files" to="#">View Files</Link></td>
-                                        <td><Link className="actions" to="#">Actions <DownArrow /></Link></td>
+                                        <td><p className="variable-width name">NDA_Contract_2022</p>
+                                            <p className="date ">Thur 12th Jan 20</p>
+                                        </td>
+                                        <td><p className="size">12.3mb</p>
+                                            <p className="category-type">Business</p>
+                                        </td>
+
+                                        <td>
+                                            <div className='file-wrap'>
+                                                <Link className="view-files" to="#">View Files</Link>
+                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                     <tr>
 
-                                        <td className="variable-width name">Influencer_List.xls</td>
-                                        <td>Marketing</td>
-                                        <td>Thursday 12th January 2020</td>
-                                        <td>12.3mb</td>
-                                        <td><Link className="view-files" to="#">View Files</Link></td>
-                                        <td><Link className="actions" to="#">Actions <DownArrow /></Link></td>
+                                        <td><p className="variable-width name">NDA_Contract_2022</p>
+                                            <p className="date ">Thur 12th Jan 20</p>
+                                        </td>
+                                        <td><p className="size">12.3mb</p>
+                                            <p className="category-type">Business</p>
+                                        </td>
+
+                                        <td>
+                                            <div className='file-wrap'>
+                                                <Link className="view-files" to="#">View Files</Link>
+                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                     <tr>
 
-                                        <td className="variable-width name">Example_Clients.xls</td>
-                                        <td>Sales</td>
-                                        <td>Thursday 12th January 2020</td>
-                                        <td>12.3mb</td>
-                                        <td><Link className="view-files" to="#">View Files</Link></td>
-                                        <td><Link className="actions" to="#">Actions <DownArrow /></Link></td>
+                                        <td><p className="variable-width name">NDA_Contract_2022</p>
+                                            <p className="date ">Thur 12th Jan 20</p>
+                                        </td>
+                                        <td><p className="size">12.3mb</p>
+                                            <p className="category-type">Business</p>
+                                        </td>
+
+                                        <td>
+                                            <div className='file-wrap'>
+                                                <Link className="view-files" to="#">View Files</Link>
+                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td className="variable-width name">cell2_5</td>
-                                        <td>cell3_5</td>
-                                        <td>cell4_5</td>
-                                        <td>cell5_5</td>
-                                        <td><Link className="view-files" to="#">View Files</Link></td>
-                                        <td><Link className="actions" to="#">Actions <DownArrow /></Link></td>
+
+                                        <td><p className="variable-width name">NDA_Contract_2022</p>
+                                            <p className="date ">Thur 12th Jan 20</p>
+                                        </td>
+                                        <td><p className="size">12.3mb</p>
+                                            <p className="category-type">Business</p>
+                                        </td>
+
+                                        <td>
+                                            <div className='file-wrap'>
+                                                <Link className="view-files" to="#">View Files</Link>
+                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                     <tr className="folder">
                                         <td>< FolderIconBabyBlue /></td>
                                         <td className="variable-width name">Staff Headshots</td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+
                                         <td><RightArrow /></td>
                                     </tr>
                                     <tr className="folder">
                                         <td>< FolderIconBabyBlue /></td>
                                         <td className="variable-width name">Marketing</td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+
                                         <td><RightArrow /></td>
                                     </tr>
                                     <tr>
-                                        <td><FoldersIcon /></td>
-                                        <td className="variable-width name">cell2_5</td>
-                                        <td>cell3_5</td>
-                                        <td>cell4_5</td>
-                                        <td>cell5_5</td>
-                                        <td><Link className="view-files" to="#">View Files</Link></td>
-                                        <td><Link className="actions" to="#">Actions <DownArrow /></Link></td>
+
+                                        <td><p className="variable-width name">NDA_Contract_2022</p>
+                                            <p className="date ">Thur 12th Jan 20</p>
+                                        </td>
+                                        <td><p className="size">12.3mb</p>
+                                            <p className="category-type">Business</p>
+                                        </td>
+
+                                        <td>
+                                            <div className='file-wrap'>
+                                                <Link className="view-files" to="#">View Files</Link>
+                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><ImageIcon /></td>
-                                        <td className="variable-width name">Anna.png</td>
-                                        <td>cell3_5</td>
-                                        <td>cell4_5</td>
-                                        <td>cell5_5</td>
-                                        <td><Link className="view-files" to="#">View Files</Link></td>
-                                        <td><Link className="actions" to="#">Actions <DownArrow /></Link></td>
+
+                                        <td><p className="variable-width name">NDA_Contract_2022</p>
+                                            <p className="date ">Thur 12th Jan 20</p>
+                                        </td>
+                                        <td><p className="size">12.3mb</p>
+                                            <p className="category-type">Business</p>
+                                        </td>
+
+                                        <td>
+                                            <div className='file-wrap'>
+                                                <Link className="view-files" to="#">View Files</Link>
+                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                 </tbody>
 

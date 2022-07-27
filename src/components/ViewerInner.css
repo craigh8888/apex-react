@@ -13,9 +13,9 @@ table.blueTable th {
     /* padding: 3px 2px; */
 }
 
-.mobile-wrap .mobile-wrap table.blueTable.table-curved tbody tr td:first-of-type:before {
+/* .mobile-wrap .mobile-wrap table.blueTable.table-curved tbody tr td:first-of-type:before {
     content: unset;
-}
+} */
 
 .mobile-wrap .mobile-wrap table.blueTable.table-curved tbody tr.folder td:first-of-type:before {
     content: '';
@@ -33,6 +33,10 @@ table.blueTable th {
     min-width: 142px;
     max-width: 131px;
     padding: 3px 11px;
+}
+
+.navbar-container .button-wrap {
+    margin: 0 10px 0px 0;
 }
 
 .mobile-wrap .file-wrap {

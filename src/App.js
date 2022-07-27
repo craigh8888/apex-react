@@ -12,6 +12,7 @@ import Team from './components/pages/Team';
 import AllFiles from './components/pages/AllFiles';
 import NFTFolder from './components/pages/NFTFolder';
 import Products from './components/pages/Products';
+import AllFilesSettings from './components/pages/Settings-allfiles';
 import SignUp from './components/pages/SignUp';
 import AdvisoryBoard from './components/pages/AdvisoryBoards';
 
@@ -28,7 +29,7 @@ function App() {
           <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
           <Route path="/apex-react/products" element={<Products />} />
           <Route path="/apex-react/sign-up" element={<SignUp />} />
-
+          <Route path="/apex-react/settings" element={<AllFilesSettings />} />
         </Routes>
       </Router>
 

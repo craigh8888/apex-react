@@ -1,0 +1,61 @@
+.login-box-wrap {
+    max-width: 389px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-block: 17px 18px;
+    padding-inline: 36px;
+    margin-top: 44px;
+    z-index: 1;
+}
+
+.login-box-wrap button {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.login-box-wrap button svg {
+    margin-right: 13px;
+    width: 27px;
+}
+
+.login-box-wrap .button-wrap {
+    display: block;
+}
+
+.login-box-wrap a {
+    text-decoration: none;
+}
+
+.login-box-wrap button,
+.login-box-wrap a {
+    /* max-width: 263px; */
+    width: 100%;
+    margin: 0 0 6px 0;
+    border-radius: 6px;
+}
+
+a.create-acc {
+    font-size: 13px;
+    color: #040936;
+    line-height: 19.5px;
+    text-align: center;
+    display: block;
+    margin-top: 32px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+p.title-login {
+    text-align: center;
+    color: #040936;
+    font-weight: 600;
+    margin: 0 0 7px 0;
+}
+
+p.title-para {
+    margin: 0 0 14px 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #6B7280;
+}

@@ -1,0 +1,5 @@
+.social-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+}

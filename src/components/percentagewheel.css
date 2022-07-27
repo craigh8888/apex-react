@@ -1,0 +1,54 @@
+.storage-preview-wrapper {
+    height: 100%;
+    background: #fff;
+}
+
+.container-progress-bar {
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+}
+
+.circular-progress {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.details-row {
+    padding-left: 1em;
+}
+
+.storage-preview-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 66%;
+    width: 66%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.details-row {
+    font-size: 9px;
+}
+
+.value-container {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 5px;
+    line-height: 6px;
+    color: #231c3d;
+}

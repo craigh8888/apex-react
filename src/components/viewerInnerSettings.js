@@ -101,25 +101,25 @@ function ViewerInner() {
                                             <form>
                                                 <div className='form-item-wrap'>
                                                     <label>
-                                                        Name
+                                                        <span>Name</span>
                                                         <input type="text" name="name" placeholder='John Smith' />
                                                     </label>
                                                 </div>
                                                 <div className='form-item-wrap'>
                                                     <label>
-                                                        Email
+                                                        <span>Email</span>
                                                         <input type="text" name="name" placeholder='john.s@gmail.com' />
                                                     </label>
                                                 </div>
                                                 <div className='form-item-wrap'>
                                                     <label>
-                                                        Alias
+                                                        <span>Alias</span>
                                                         <input type="text" name="name" placeholder='Mr Jay' />
                                                     </label>
                                                 </div>
                                                 <div className='form-item-wrap'>
                                                     <label>
-                                                        Billing
+                                                        <span>Billing</span>
                                                         <select>
                                                             <option value="Cryptocurrency-avax">Cryptocurrency (AVAX)</option>
                                                             <option value="Credit Card">Credit Card</option>

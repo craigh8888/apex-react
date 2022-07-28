@@ -29,7 +29,7 @@ function App() {
           <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
           <Route path="/apex-react/products" element={<Products />} />
           <Route path="/apex-react/sign-up" element={<SignUp />} />
-          <Route path="/apex-react/settings" element={<AllFilesSettings />} />
+          <Route path="/settings" element={<AllFilesSettings />} />
         </Routes>
       </Router>
 

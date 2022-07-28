@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import SidebarMenu from '../SidebarMenu';
-import ViewerOuterNFT from '../ViewerOuterNFT';
+import ViewerOuterSettings from '../viewerOuterSettings';
 import LoginBox from '../LoginBox';
 import NavbarFiles from '../navbarFiles';
 
@@ -30,14 +30,14 @@ export default function NFTFolder() {
                 <>
 
                     <SidebarMenu />
-                    <ViewerOuterNFT />
+                    <ViewerOuterSettings />
                 </>
             ) : (
                 <>
                     <div className="mobile-wrap">
                         <NavbarFiles />
 
-                        <ViewerOuterNFT />
+                        <ViewerOuterSettings />
                     </div>
 
                 </>

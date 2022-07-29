@@ -30,6 +30,7 @@ p.connect-wallet.title {
     line-height: 41px;
     color: #00224C;
     margin: 0;
+    text-transform: capitalize;
 }
 
 p.wallet-address {
@@ -53,6 +54,43 @@ p.wallet-address {
     padding: 25px 25px;
 }
 
+.payment-info p {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 428px;
+}
+
+h3.col-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 41px;
+    color: #00224C;
+}
+
+table.preview-invoices {
+    max-width: 391px;
+}
+
+table.preview-invoices tbody tr td:nth-of-type(3) {
+    color: #00224C;
+    width: 120px;
+}
+
+.wallet-section .row {
+    max-width: 1024px;
+}
+
+.delete-account {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 41px;
+    /* identical to box height, or 342% */
+
+    text-decoration-line: underline;
+
+    color: #757575;
+}
+
 .form-item-wrap input,
 .form-item-wrap select {
     background-color: #f0f0f0;
@@ -64,6 +102,7 @@ p.wallet-address {
     line-height: 19.5px;
     max-width: 357px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -123,6 +162,37 @@ a.view-files.add-funds {
     font-size: 10px;
     line-height: 15px;
     font-weight: 500;
+    border: 1px solid #017B95;
+    padding: 7px 28px 6px 29px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.payment-info h3,
+.preview-invoices h3 {
+    font-size: 16px;
+    color: #00224C;
+    line-height: 41px;
+}
+
+table.preview-invoices td:first-of-type {
+    width: 10%;
+    max-width: unset;
+}
+
+table.preview-invoices td:first-of-type {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 41px;
+    color: #00224C;
+}
+
+table.preview-invoices td:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 41px;
+    color: #6B7280;
+    text-align: center;
 }
 
 p.plan-size {
@@ -194,4 +264,5 @@ a.show-all.account-currency {
     font-size: 16px;
     line-height: 41px;
     text-decoration: underline;
+    color: #000000;
 }

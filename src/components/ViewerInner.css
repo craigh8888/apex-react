@@ -214,6 +214,16 @@ table.blueTable.table-curved.nft-only tbody {
     row-gap: 6px;
 }
 
+/* for media only difference is additional media class 
+ */
+
+table.blueTable.table-curved.media-only tbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 275px);
+    grid-template-rows: auto;
+    row-gap: 6px;
+}
+
 table.blueTable.title-section tr td:nth-of-type(2) {
     width: 1%;
     white-space: nowrap;

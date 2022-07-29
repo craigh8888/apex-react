@@ -15,6 +15,7 @@ import Products from './components/pages/Products';
 import AllFilesSettings from './components/pages/Settings-allfiles';
 import SignUp from './components/pages/SignUp';
 import AdvisoryBoard from './components/pages/AdvisoryBoards';
+import FolderMedia from './components/pages/MediaLibrary';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/apex-react/products" element={<Products />} />
           <Route path="/apex-react/sign-up" element={<SignUp />} />
           <Route path="/settings" element={<AllFilesSettings />} />
+          <Route path="/media-library" element={<FolderMedia />} />
         </Routes>
       </Router>
 

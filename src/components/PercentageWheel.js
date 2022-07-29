@@ -25,6 +25,12 @@ export default class percentagewheel extends Component {
             let progressEndValue = 66;
             let speed = 50;
 
+            // new 
+            // var progressBar = document.querySelectorAll(".circular-progress");
+            // var valueContainer = document.querySelectorAll(".value-container");
+
+            // end new
+
             // console.log('loaded');
             let progress = setInterval(() => {
                 progressValue++;

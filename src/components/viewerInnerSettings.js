@@ -12,6 +12,10 @@ import { ReactComponent as FolderIconBabyBlue } from '../folder-light-blue.svg';
 // import { ReactComponent as ImageIcon } from '../image.svg';
 import { ReactComponent as DownArrow } from '../down-arrow.svg';
 import { ReactComponent as RightArrow } from '../right-arrow.svg';
+import { ReactComponent as DownloadIcon } from '../download-invoice.svg';
+import { ReactComponent as SettingsIcon } from '../wallet-management.svg';
+import { ReactComponent as SettingsSliderIcon } from '../settings-slider-icon.svg';
+import CurrentStorage from './CurrentStorage';
 
 function ViewerInner() {
 
@@ -39,19 +43,17 @@ function ViewerInner() {
                                 <div className="breadcrumb-trail">
                                     <span>All Files > <span class="tier-1">Settings</span></span>
                                 </div>
-                                <div className='page-desc'>
-                                    <p>You can edit your Billing, Account Information and Notifications here.</p>
-                                </div>
-                                <div className="button-wrap">
-                                    <button className=" button-top add-folder">Add Folder <ButtonAddFolderIcon /></button>
-                                    <button className="button-top upload-files">Upload Files  <ButtonUploadFilesIcon /></button>
+
+                                <div className="current-storage white">
+                                    {/* <CurrentStorage /> */}
                                 </div>
 
                             </div>
+
                             <table className="blueTable title-section">
                                 <tbody>
                                     <tr>
-                                        <td><FoldersIcon /></td>
+                                        <td><SettingsSliderIcon /></td>
                                         <td><span className='Title'>Settings</span></td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
@@ -61,9 +63,11 @@ function ViewerInner() {
                                     </tr>
                                 </tbody>
                             </table>
-
+                            <div className='page-desc'>
+                                <p>You can edit your Billing, Account Information and Notifications here.</p>
+                            </div>
                             <div className='wallet-section'>
-                                <h3>Wallet Management <FoldersIcon /></h3>
+                                <h3>Wallet Management <SettingsIcon /></h3>
                                 <div className='connected-wallet-wrap'>
                                     <table>
                                         <tr>
@@ -126,12 +130,17 @@ function ViewerInner() {
                                                         </select>
                                                     </label>
                                                 </div>
-                                                <input type="submit" value="Submit" />
+                                                <div className='form-item-wrap'>
+                                                    <label>
+                                                        <span></span>
+                                                        <input type="submit" value="Submit" />
+                                                    </label>
+                                                </div>
                                             </form>
 
                                         </div>
                                         <div className='row-item col col-50'>
-                                            <h3 className='billing'>Account</h3>
+                                            <h3 className='col-title'>Billing</h3>
                                             <div className='plan-wrap'>
                                                 <div>
                                                     <p className='current-plan'>Current Plan</p>
@@ -157,34 +166,48 @@ function ViewerInner() {
                                                             <td>#INV_787328.pdf</td>
                                                             <td>04/04/22</td>
                                                             <td>Download Invoice</td>
-                                                            <td>X</td>
+                                                            <td><DownloadIcon /></td>
                                                         </tr>
                                                         <tr>
                                                             <td>#INV_787328.pdf</td>
                                                             <td>04/04/22</td>
                                                             <td>Download Invoice</td>
-                                                            <td>X</td>
+                                                            <td><DownloadIcon /></td>
                                                         </tr>
                                                         <tr>
                                                             <td>#INV_787328.pdf</td>
                                                             <td>04/04/22</td>
                                                             <td>Download Invoice</td>
-                                                            <td>X</td>
+                                                            <td><DownloadIcon /></td>
                                                         </tr>
                                                         <tr>
                                                             <td>#INV_787328.pdf</td>
                                                             <td>04/04/22</td>
                                                             <td>Download Invoice</td>
-                                                            <td>X</td>
+                                                            <td><DownloadIcon /></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                                <div className="pagination" >
+                                                    <table>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <td colSpan="7">
+                                                                    <div className="links"><Link to="#">&laquo;</Link> <Link className="active" to="#">1</Link> <Link to="#">2</Link> <Link to="#">...</Link> <Link to="#">8</Link> <Link to="#">9</Link> <Link to="#">&raquo;</Link></div>
+                                                                </td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
+                                <div className='row account-delete'>
+                                    <Link className="delete-account" to="#">Delete Account</Link>
 
+                                </div>
                             </div>
 
                         </div>

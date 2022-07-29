@@ -1,9 +1,9 @@
 import React from 'react';
 import './FolderViewerOuter.css';
 
-import ViewerInnerNFTs from './ViewerInnerNFT';
+import ViewerInnerMedia from './ViewerInnerMedia';
 import Notifications from './notifications';
-function FolderViewerOuterNFT() {
+function FolderViewerOuterMedia() {
     return (
 
         <div className='folder-viewer-outer'>
@@ -11,7 +11,7 @@ function FolderViewerOuterNFT() {
                 <div className='viewer-inner'>
                     <div>
                         <Notifications />
-                        <ViewerInnerNFTs />
+                        <ViewerInnerMedia />
                     </div>
                 </div>
             </div>
@@ -19,4 +19,4 @@ function FolderViewerOuterNFT() {
     );
 }
 
-export default FolderViewerOuterNFT;
+export default FolderViewerOuterMedia;

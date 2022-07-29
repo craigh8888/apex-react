@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/apex-react/static/css/main.ec736421.css",
-    "main.js": "/apex-react/static/js/main.b48151c0.js",
+    "main.css": "/apex-react/static/css/main.50368aed.css",
+    "main.js": "/apex-react/static/js/main.631f571f.js",
     "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
     "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
+    "static/media/media-library.jpg": "/apex-react/static/media/media-library.d2e84746ac4a860b8775.jpg",
     "static/media/arweave.svg": "/apex-react/static/media/arweave.5e9d962f63fe331b8acde395e3083e20.svg",
     "static/media/nft-owl.jpg": "/apex-react/static/media/nft-owl.5686c7fa07fed1997cae.jpg",
     "static/media/metamask-logo.svg": "/apex-react/static/media/metamask-logo.10759bac87529c8d829aba44d3fd6e05.svg",
@@ -41,12 +42,12 @@
     "static/media/right-arrow.svg": "/apex-react/static/media/right-arrow.6ea36c1f68ad67beb3b807695dbf9283.svg",
     "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
     "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
-    "main.ec736421.css.map": "/apex-react/static/css/main.ec736421.css.map",
-    "main.b48151c0.js.map": "/apex-react/static/js/main.b48151c0.js.map",
+    "main.50368aed.css.map": "/apex-react/static/css/main.50368aed.css.map",
+    "main.631f571f.js.map": "/apex-react/static/js/main.631f571f.js.map",
     "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec736421.css",
-    "static/js/main.b48151c0.js"
+    "static/css/main.50368aed.css",
+    "static/js/main.631f571f.js"
   ]
 }

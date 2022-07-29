@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apex-react/static/css/main.8db8786a.css",
-    "main.js": "/apex-react/static/js/main.d533558b.js",
+    "main.css": "/apex-react/static/css/main.ec736421.css",
+    "main.js": "/apex-react/static/js/main.b48151c0.js",
     "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
     "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
     "static/media/arweave.svg": "/apex-react/static/media/arweave.5e9d962f63fe331b8acde395e3083e20.svg",
@@ -15,7 +15,9 @@
     "static/media/SidebarLogo.svg": "/apex-react/static/media/SidebarLogo.4be318a23449d6463deeb395e2f1419a.svg",
     "static/media/apex-logo.svg": "/apex-react/static/media/apex-logo.4be318a23449d6463deeb395e2f1419a.svg",
     "static/media/icon-archive.svg": "/apex-react/static/media/icon-archive.2a2c46cadad352e4146b94aa888e33c2.svg",
+    "static/media/settings-slider-icon.svg": "/apex-react/static/media/settings-slider-icon.80a4c3390ed339ff24bae290e8ecd766.svg",
     "static/media/icon-settings.svg": "/apex-react/static/media/icon-settings.fd634ec397f0c85aa66094a85325c6bd.svg",
+    "static/media/wallet-management.svg": "/apex-react/static/media/wallet-management.1d703fd53a1a8e53fec57c088f340040.svg",
     "static/media/apple.svg": "/apex-react/static/media/apple.14c7055e49b8358e92f3f5c67f326ade.svg",
     "static/media/files-icon.svg": "/apex-react/static/media/files-icon.3bb2d1f63322120ca7cf1a862d338cfe.svg",
     "static/media/cloud-icon.svg": "/apex-react/static/media/cloud-icon.bd2400253979c5496602532e6bd50129.svg",
@@ -26,8 +28,10 @@
     "static/media/icon-folder.svg": "/apex-react/static/media/icon-folder.4baadd5022b8c724569f203b07de7064.svg",
     "static/media/google.svg": "/apex-react/static/media/google.076789828145e58adc1b25d46bd0380c.svg",
     "static/media/close-modal.svg": "/apex-react/static/media/close-modal.11a7db40646d89a6dd48c14276bc0660.svg",
+    "static/media/close-icon.svg": "/apex-react/static/media/close-icon.bb8ef5d21b33231905324f28ff56a4ad.svg",
     "static/media/nft-actions.svg": "/apex-react/static/media/nft-actions.9d2f28864504c2fc6977ef33b0fd9bbd.svg",
     "index.html": "/apex-react/index.html",
+    "static/media/download-invoice.svg": "/apex-react/static/media/download-invoice.7311106130cb217d8172b53306be330d.svg",
     "static/media/image.svg": "/apex-react/static/media/image.1af4ac1806038048c77327826f049976.svg",
     "static/media/nft-viewer.svg": "/apex-react/static/media/nft-viewer.805e0a2aaf5079f5c72185c8fe1e24d6.svg",
     "static/media/icon-star.svg": "/apex-react/static/media/icon-star.2799d0f2d88bde612266f63206e83dcd.svg",
@@ -37,12 +41,12 @@
     "static/media/right-arrow.svg": "/apex-react/static/media/right-arrow.6ea36c1f68ad67beb3b807695dbf9283.svg",
     "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
     "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
-    "main.8db8786a.css.map": "/apex-react/static/css/main.8db8786a.css.map",
-    "main.d533558b.js.map": "/apex-react/static/js/main.d533558b.js.map",
+    "main.ec736421.css.map": "/apex-react/static/css/main.ec736421.css.map",
+    "main.b48151c0.js.map": "/apex-react/static/js/main.b48151c0.js.map",
     "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8db8786a.css",
-    "static/js/main.d533558b.js"
+    "static/css/main.ec736421.css",
+    "static/js/main.b48151c0.js"
   ]
 }

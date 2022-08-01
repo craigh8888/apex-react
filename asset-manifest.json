@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apex-react/static/css/main.b95dae2a.css",
-    "main.js": "/apex-react/static/js/main.b01a3d33.js",
+    "main.js": "/apex-react/static/js/main.50398292.js",
     "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
     "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
     "static/media/media-library.jpg": "/apex-react/static/media/media-library.d2e84746ac4a860b8775.jpg",
@@ -43,11 +43,11 @@
     "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
     "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
     "main.b95dae2a.css.map": "/apex-react/static/css/main.b95dae2a.css.map",
-    "main.b01a3d33.js.map": "/apex-react/static/js/main.b01a3d33.js.map",
+    "main.50398292.js.map": "/apex-react/static/js/main.50398292.js.map",
     "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b95dae2a.css",
-    "static/js/main.b01a3d33.js"
+    "static/js/main.50398292.js"
   ]
 }

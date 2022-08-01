@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apex-react/static/css/main.b95dae2a.css",
-    "main.js": "/apex-react/static/js/main.f4b2643a.js",
+    "main.js": "/apex-react/static/js/main.1fec3f25.js",
     "static/js/787.37739112.chunk.js": "/apex-react/static/js/787.37739112.chunk.js",
     "static/media/overlay-bg.png": "/apex-react/static/media/overlay-bg.0990f9fe9944420d6469.png",
     "static/media/media-library.jpg": "/apex-react/static/media/media-library.d2e84746ac4a860b8775.jpg",
@@ -35,6 +35,7 @@
     "static/media/download-invoice.svg": "/apex-react/static/media/download-invoice.7311106130cb217d8172b53306be330d.svg",
     "static/media/image.svg": "/apex-react/static/media/image.1af4ac1806038048c77327826f049976.svg",
     "static/media/nft-viewer.svg": "/apex-react/static/media/nft-viewer.805e0a2aaf5079f5c72185c8fe1e24d6.svg",
+    "static/media/icon-star-blue.svg": "/apex-react/static/media/icon-star-blue.74dc574e02de0dc229265b56c31de398.svg",
     "static/media/icon-star.svg": "/apex-react/static/media/icon-star.2799d0f2d88bde612266f63206e83dcd.svg",
     "static/media/icon-plus.svg": "/apex-react/static/media/icon-plus.b17cd23eefe88e0add7434af314e8bf6.svg",
     "static/media/image-bg.svg": "/apex-react/static/media/image-bg.086bd78f6cb0bdab6262.svg",
@@ -43,11 +44,11 @@
     "static/media/down-arrow.svg": "/apex-react/static/media/down-arrow.bda336effa57b3555c1a32fd048e1033.svg",
     "static/media/Rectangle.svg": "/apex-react/static/media/Rectangle.2c768debe14a2c3a7277590da14c539f.svg",
     "main.b95dae2a.css.map": "/apex-react/static/css/main.b95dae2a.css.map",
-    "main.f4b2643a.js.map": "/apex-react/static/js/main.f4b2643a.js.map",
+    "main.1fec3f25.js.map": "/apex-react/static/js/main.1fec3f25.js.map",
     "787.37739112.chunk.js.map": "/apex-react/static/js/787.37739112.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b95dae2a.css",
-    "static/js/main.f4b2643a.js"
+    "static/js/main.1fec3f25.js"
   ]
 }

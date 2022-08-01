@@ -5,7 +5,7 @@ import FolderViewerOuter from '../FolderViewerOuter';
 import LoginBox from '../LoginBox';
 import NavbarFiles from '../navbarFiles';
 
-
+import TempNav from '../tempNav';
 
 export default function AllFiles() {
 
@@ -28,6 +28,7 @@ export default function AllFiles() {
 
                     <SidebarMenu />
                     <FolderViewerOuter />
+                    <TempNav />
                 </>
             ) : (
                 <>

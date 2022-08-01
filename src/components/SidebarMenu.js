@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import '../App.css';
-// import { Button } from './Button';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import SidebarNav from './SidebarNav';
 import SidebarRecents from './SidebarRecents';
@@ -12,11 +12,23 @@ import { ReactComponent as ArweaveSidebarLogo } from '../arweave.svg';
 import CurrentStorage from './CurrentStorage';
 import AccountSidebar from './AccountSidebar';
 
+
+
 function SidebarMenu() {
+
+    const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
+
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
     return (
         <div className='sidebar-wrap'>
             <div className='sidebar-top'>
-                <SidebarLogo />
+                <Link to='/apex-react/' className='logo-link' onClick={closeMobileMenu}>
+                    <SidebarLogo />
+                </Link>
+
                 <p className='poweredby'>Powered by <ArweaveSidebarLogo /></p>
             </div>
             <SidebarNav />

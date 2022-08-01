@@ -86,6 +86,38 @@ nav.navbar.is-mobile .account-wrap {
     margin-right: 10px;
 }
 
+.navbar-container-dev ul.nav-menu {
+    padding: 0;
+    justify-content: left;
+    margin: 0;
+    display: inline;
+}
+
+.navbar-container-dev {
+    max-width: 800px;
+    margin: 1em auto;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 5px 10px;
+
+}
+
+.navbar-container-dev * {
+    margin: 0;
+}
+
+.navbar-container-dev ul,
+.navbar-container-dev ul li a,
+.navbar-container-dev ul li {
+    display: inline-block;
+    color: #000;
+}
+
+.navbar-container-dev a.nav-links {
+    z-index: 999;
+    position: relative;
+}
+
 nav.navbar.is-mobile .nav-menu {
     width: auto;
     height: auto;

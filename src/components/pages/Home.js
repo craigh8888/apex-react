@@ -5,6 +5,7 @@ import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 import UploadFiles from '../uploadFiles';
+import TempNav from '../tempNav';
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
             }
 
             <UploadFiles />
+            <TempNav />
         </>
     );
 }

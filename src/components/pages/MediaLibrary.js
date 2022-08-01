@@ -4,7 +4,7 @@ import SidebarMenu from '../SidebarMenu';
 import ViewerOuterMediaLibrary from '../viewerOuterMediaLibrary';
 import LoginBox from '../LoginBox';
 import NavbarFiles from '../navbarFiles';
-
+import TempNav from '../tempNav';
 
 export default function MediaFolder() {
 
@@ -31,6 +31,7 @@ export default function MediaFolder() {
 
                     <SidebarMenu />
                     <ViewerOuterMediaLibrary />
+                    <TempNav />
                 </>
             ) : (
                 <>

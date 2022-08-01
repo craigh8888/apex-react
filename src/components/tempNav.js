@@ -108,7 +108,7 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/apex-react/advisory-boards'
+                                to='/apex-react/#home-modal'
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >

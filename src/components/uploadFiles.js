@@ -14,7 +14,7 @@ import FolderLocation from '../foldericon-blue.png';
 export default function UploadFiles() {
     return (
         <>
-            <div className='pop-up-wrapper'>
+            <div className='pop-up-wrapper' id="home-modal">
                 <Popup
                     trigger={<button className="button"> Open TEST Modal </button>}
                     modal

@@ -102,6 +102,11 @@ nav.navbar.is-mobile .account-wrap {
 
 }
 
+div#home-modal {
+    padding: 10px 0;
+    text-align: center;
+}
+
 .navbar-container-dev * {
     margin: 0;
 }

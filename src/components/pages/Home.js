@@ -17,9 +17,9 @@ function Home() {
             <Footer /> <Footer /> */
 
             }
-
-            <UploadFiles />
             <TempNav />
+            <UploadFiles />
+
         </>
     );
 }

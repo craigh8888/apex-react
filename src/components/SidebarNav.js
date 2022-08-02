@@ -44,7 +44,7 @@ function SidebarNav() {
 
 
             <NavLink
-                to='/apex-react/Folders'
+                to='/apex-react/folders'
                 activeClassName='is-active'
                 onClick={closeMobileMenu}
             >
@@ -54,7 +54,7 @@ function SidebarNav() {
             </NavLink>
 
             <NavLink
-                to='/apex-react/Folders'
+                to='/apex-react/archive'
                 activeClassName='is-active'
                 onClick={closeMobileMenu}
             >

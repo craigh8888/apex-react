@@ -14,6 +14,7 @@ import NFTFolder from './components/pages/NFTFolder';
 import AllFilesSettings from './components/pages/Settings-allfiles';
 import Favourites from './components/pages/Favourites';
 import FolderMedia from './components/pages/MediaLibrary';
+import Folders from './components/pages/Folders';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/apex-react/AllFiles" element={<AllFiles />} />
           <Route path="/apex-react/NFTFolder" element={<NFTFolder />} />
           <Route path="/apex-react/team" element={<Team />} />
+          <Route path="/apex-react/folders" element={<Folders />} />
           {/* <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
           <Route path="/apex-react/products" element={<Products />} />
           <Route path="/apex-react/sign-up" element={<SignUp />} /> */}

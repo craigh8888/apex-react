@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './ViewerInner.css';
 import { Link } from 'react-router-dom';
 import { ReactComponent as FoldersIcon } from '../icon-folder-blue.svg';
-import { ReactComponent as ButtonAddFolderIcon } from '../add-folder.svg';
+// import { ReactComponent as ButtonAddFolderIcon } from '../add-folder.svg';
 import { ReactComponent as StarIcon } from '../icon-star-blue.svg';
-import { ReactComponent as ButtonUploadFilesIcon } from '../upload-files.svg';
+// import { ReactComponent as ButtonUploadFilesIcon } from '../upload-files.svg';
 
 import { ReactComponent as FolderIconBabyBlue } from '../folder-light-blue.svg';
 
@@ -36,7 +36,7 @@ function ViewerInnerFavourites() {
                             <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
 
                                 <div className="breadcrumb-trail">
-                                    <span>All Files > Favourites</span>
+                                    <span>All Files > Folders</span>
                                 </div>
                                 {/* <div className="button-wrap">
                                     <button className=" button-top add-folder">Add Folder <ButtonAddFolderIcon /></button>
@@ -48,7 +48,7 @@ function ViewerInnerFavourites() {
                                 <tbody>
                                     <tr>
                                         <td><StarIcon /></td>
-                                        <td><span className='Title'>Favourites</span></td>
+                                        <td><span className='Title'>Folders</span></td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
@@ -173,7 +173,7 @@ function ViewerInnerFavourites() {
                             <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
 
                                 <div className="breadcrumb-trail">
-                                    <span>All Files</span>
+                                    <span>All Files > Folders</span>
                                 </div>
 
 
@@ -182,7 +182,7 @@ function ViewerInnerFavourites() {
                                 <tbody>
                                     <tr>
                                         <td><FoldersIcon /></td>
-                                        <td><span className='Title'>All Files</span></td>
+                                        <td><span className='Title'>Folders</span></td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
@@ -205,125 +205,40 @@ function ViewerInnerFavourites() {
                                 </thead>
 
                                 <tbody>
-                                    <tr>
-
-                                        <td><p className="variable-width name">NDA_Contract_2022</p>
-                                            <p className="date ">Thur 12th Jan 20</p>
-                                        </td>
-                                        <td><p className="size">12.3mb</p>
-                                            <p className="category-type">Business</p>
-                                        </td>
-
-                                        <td>
-                                            <div className='file-wrap'>
-                                                <Link className="view-files" to="#">View Files</Link>
-                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
-                                            </div>
-
-                                        </td>
+                                    <tr className="folder">
+                                        <td>< FolderIconBabyBlue /></td>
+                                        <td className="variable-width name">Staff Headshots</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><RightArrow /></td>
                                     </tr>
-                                    <tr>
-
-                                        <td><p className="variable-width name">NDA_Contract_2022</p>
-                                            <p className="date ">Thur 12th Jan 20</p>
-                                        </td>
-                                        <td><p className="size">12.3mb</p>
-                                            <p className="category-type">Business</p>
-                                        </td>
-
-                                        <td>
-                                            <div className='file-wrap'>
-                                                <Link className="view-files" to="#">View Files</Link>
-                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
-                                            </div>
-
-                                        </td>
+                                    <tr className="folder">
+                                        <td>< FolderIconBabyBlue /></td>
+                                        <td className="variable-width name">Staff Headshots</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><RightArrow /></td>
                                     </tr>
-                                    <tr>
-
-                                        <td><p className="variable-width name">NDA_Contract_2022</p>
-                                            <p className="date ">Thur 12th Jan 20</p>
-                                        </td>
-                                        <td><p className="size">12.3mb</p>
-                                            <p className="category-type">Business</p>
-                                        </td>
-
-                                        <td>
-                                            <div className='file-wrap'>
-                                                <Link className="view-files" to="#">View Files</Link>
-                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
-                                            </div>
-
-                                        </td>
+                                    <tr className="folder">
+                                        <td>< FolderIconBabyBlue /></td>
+                                        <td className="variable-width name">Staff Headshots</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><RightArrow /></td>
                                     </tr>
-                                    <tr>
 
-                                        <td><p className="variable-width name">NDA_Contract_2022</p>
-                                            <p className="date ">Thur 12th Jan 20</p>
-                                        </td>
-                                        <td><p className="size">12.3mb</p>
-                                            <p className="category-type">Business</p>
-                                        </td>
 
-                                        <td>
-                                            <div className='file-wrap'>
-                                                <Link className="view-files" to="#">View Files</Link>
-                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
-                                            </div>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
 
-                                        <td><p className="variable-width name">NDA_Contract_2022</p>
-                                            <p className="date ">Thur 12th Jan 20</p>
-                                        </td>
-                                        <td><p className="size">12.3mb</p>
-                                            <p className="category-type">Business</p>
-                                        </td>
 
-                                        <td>
-                                            <div className='file-wrap'>
-                                                <Link className="view-files" to="#">View Files</Link>
-                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
-                                            </div>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
 
-                                        <td><p className="variable-width name">NDA_Contract_2022</p>
-                                            <p className="date ">Thur 12th Jan 20</p>
-                                        </td>
-                                        <td><p className="size">12.3mb</p>
-                                            <p className="category-type">Business</p>
-                                        </td>
-
-                                        <td>
-                                            <div className='file-wrap'>
-                                                <Link className="view-files" to="#">View Files</Link>
-                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
-                                            </div>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td><p className="variable-width name">NDA_Contract_2022</p>
-                                            <p className="date ">Thur 12th Jan 20</p>
-                                        </td>
-                                        <td><p className="size">12.3mb</p>
-                                            <p className="category-type">Business</p>
-                                        </td>
-
-                                        <td>
-                                            <div className='file-wrap'>
-                                                <Link className="view-files" to="#">View Files</Link>
-                                                <Link className="actions" to="#">Actions <DownArrow /></Link>
-                                            </div>
-
-                                        </td>
-                                    </tr>
                                 </tbody>
 
                                 {/* <tfoot>

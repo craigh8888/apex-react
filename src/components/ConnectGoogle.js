@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import './ConnectGoogle.css';
+import '../styles/ConnectGoogle.css';
 
-import { ReactComponent as GoogleLogo } from './google.svg';
+import { ReactComponent as GoogleLogo } from '../images/google.svg';
 
 
 function ConnectGoogle() {

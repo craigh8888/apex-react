@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './SidebarNav.css';
-import { ReactComponent as FilesLogo } from '../files-icon.svg';
-import { ReactComponent as StarIcon } from '../icon-star.svg';
-import { ReactComponent as FoldersIcon } from '../icon-folder.svg';
-import { ReactComponent as ArchiveIcon } from '../icon-archive.svg';
-import { ReactComponent as SettingsIcon } from '../icon-settings.svg';
-import { ReactComponent as PlusIcon } from '../icon-plus.svg';
-import { ReactComponent as RectangleIcon } from '../Rectangle.svg';
+import '../styles/SidebarNav.css';
+import { ReactComponent as FilesLogo } from '../images/files-icon.svg';
+import { ReactComponent as StarIcon } from '../images/icon-star.svg';
+import { ReactComponent as FoldersIcon } from '../images/icon-folder.svg';
+import { ReactComponent as ArchiveIcon } from '../images/icon-archive.svg';
+import { ReactComponent as SettingsIcon } from '../images/icon-settings.svg';
+import { ReactComponent as PlusIcon } from '../images/icon-plus.svg';
+import { ReactComponent as RectangleIcon } from '../images/Rectangle.svg';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 function SidebarNav() {

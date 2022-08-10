@@ -1,5 +1,5 @@
 import React from 'react';
-import './FolderViewerOuter.css';
+import '../styles/FolderViewerOuter.css';
 
 import ViewerInner from './viewerInnerFavourites';
 

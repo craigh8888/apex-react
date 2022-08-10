@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import './ConnectMetamask.css';
+import '../styles/ConnectMetamask.css';
 
-import { ReactComponent as MetaLogo } from './metamask-logo.svg';
+import { ReactComponent as MetaLogo } from '../images/metamask-logo.svg';
 
 
 function ConnectMetamask() {

@@ -1,5 +1,5 @@
 .folder-viewer-outer .overlay {
-    background: url('./overlay-bg.png') center center/cover no-repeat;
+    background: url('../images/overlay-bg.png') center center/cover no-repeat;
     object-fit: cover;
     height: 100vh;
     /* height: 100%;
@@ -36,7 +36,7 @@
 }
 
 .folder-viewer-outer {
-    background: url('./image-bg.svg') center center/cover no-repeat;
+    background: url('../images/image-bg.svg') center center/cover no-repeat;
     height: 100vh;
     max-height: 100vh;
     width: calc(100% - 179px);

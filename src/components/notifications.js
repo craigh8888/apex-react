@@ -1,7 +1,7 @@
 import { getByDisplayValue } from '@testing-library/react';
 import React, { useState } from 'react';
-import './Notifications.css';
-import { ReactComponent as CloseIcon } from '../close-icon.svg';
+import '../styles/Notifications.css';
+import { ReactComponent as CloseIcon } from '../images/close-icon.svg';
 
 function Notifications() {
 

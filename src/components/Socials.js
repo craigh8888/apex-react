@@ -1,10 +1,10 @@
 import React from 'react';
-import './Socials.css';
+import '../styles/Socials.css';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Twitter } from '../twitter.svg';
-import { ReactComponent as Mail } from '../mail.svg';
-import { ReactComponent as Discord } from '../discord.svg';
-import { ReactComponent as M } from '../m.svg';
+import { ReactComponent as Twitter } from '../images/twitter.svg';
+import { ReactComponent as Mail } from '../images/mail.svg';
+import { ReactComponent as Discord } from '../images/discord.svg';
+import { ReactComponent as M } from '../images/m.svg';
 
 export default function Socials() {
     return (

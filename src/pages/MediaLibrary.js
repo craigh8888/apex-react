@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import '../../App.css';
-import SidebarMenu from '../SidebarMenu';
-import ViewerOuterNFT from '../ViewerOuterNFT';
-import LoginBox from '../LoginBox';
-import NavbarFiles from '../navbarFiles';
+import '../styles/App.css';
+import SidebarMenu from '../components/SidebarMenu';
+import ViewerOuterMediaLibrary from '../components/viewerOuterMediaLibrary';
+import LoginBox from '../components/LoginBox';
+import NavbarFiles from '../components/navbarFiles';
+import TempNav from '../components/tempNav';
 
-
-export default function NFTFolder() {
+export default function MediaFolder() {
 
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
@@ -30,14 +30,15 @@ export default function NFTFolder() {
                 <>
 
                     <SidebarMenu />
-                    <ViewerOuterNFT />
+                    <ViewerOuterMediaLibrary />
+                    <TempNav />
                 </>
             ) : (
                 <>
                     <div className="mobile-wrap">
                         <NavbarFiles />
 
-                        <ViewerOuterNFT />
+                        <ViewerOuterMediaLibrary />
                     </div>
 
                 </>

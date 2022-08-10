@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 // import '../App.css';
 import { Link } from 'react-router-dom';
-import './Sidebar.css';
+import '../styles/Sidebar.css';
 import SidebarNav from './SidebarNav';
 import SidebarRecents from './SidebarRecents';
 // import { ReactComponent as Lglogo } from '../apex-logo-lrge.svg';
 // import LoginBox from './LoginBox';
-import { ReactComponent as SidebarLogo } from '../SidebarLogo.svg';
+import { ReactComponent as SidebarLogo } from '../images/SidebarLogo.svg';
 
-import { ReactComponent as ArweaveSidebarLogo } from '../arweave.svg';
+import { ReactComponent as ArweaveSidebarLogo } from '../images/arweave.svg';
 import CurrentStorage from './CurrentStorage';
 import AccountSidebar from './AccountSidebar';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import './LoginBox.css';
+import '../styles/LoginBox.css';
 import { Link } from 'react-router-dom';
 import ConnectMetamask from './ConnectMetamask';
 import ConnectFacebook from './ConnectFacebook';

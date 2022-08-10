@@ -1,6 +1,6 @@
 import React from 'react';
-import './SidebarRecents.css';
-import { ReactComponent as RectangleIcon } from '../Rectangle.svg';
+import '../styles/SidebarRecents.css';
+import { ReactComponent as RectangleIcon } from '../images/Rectangle.svg';
 import { Link } from 'react-router-dom';
 
 function SidebarRecents() {

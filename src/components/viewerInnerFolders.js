@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import './ViewerInner.css';
+import '../styles/ViewerInner.css';
 import { Link } from 'react-router-dom';
-import { ReactComponent as FoldersIcon } from '../icon-folder-blue.svg';
+import { ReactComponent as FoldersIcon } from '../images/icon-folder-blue.svg';
 // import { ReactComponent as ButtonAddFolderIcon } from '../add-folder.svg';
-import { ReactComponent as StarIcon } from '../icon-star-blue.svg';
+import { ReactComponent as StarIcon } from '../images/icon-star-blue.svg';
 // import { ReactComponent as ButtonUploadFilesIcon } from '../upload-files.svg';
 
-import { ReactComponent as FolderIconBabyBlue } from '../folder-light-blue.svg';
+import { ReactComponent as FolderIconBabyBlue } from '../images/folder-light-blue.svg';
 
-import { ReactComponent as ImageIcon } from '../image.svg';
-import { ReactComponent as DownArrow } from '../down-arrow.svg';
-import { ReactComponent as RightArrow } from '../right-arrow.svg';
+import { ReactComponent as ImageIcon } from '../images/image.svg';
+import { ReactComponent as DownArrow } from '../images/down-arrow.svg';
+import { ReactComponent as RightArrow } from '../images/right-arrow.svg';
 
 function ViewerInnerFavourites() {
 

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import '../../App.css';
-import SidebarMenu from '../SidebarMenu';
-import FolderViewerOuter from '../viewerOuterFavourites';
-import LoginBox from '../LoginBox';
-import NavbarFiles from '../navbarFiles';
+import '../styles/App.css';
+import SidebarMenu from '../components/SidebarMenu';
+import ViewerOuterSettings from '../components/viewerOuterSettings';
+import LoginBox from '../components/LoginBox';
+import NavbarFiles from '../components/navbarFiles';
 
-import TempNav from '../tempNav';
 
-export default function Favourites() {
+export default function NFTFolder() {
+
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
 
@@ -21,25 +21,33 @@ export default function Favourites() {
 
     }, []);
 
+
     return (
+
+
         <div>
             {isDesktop ? (
                 <>
 
                     <SidebarMenu />
-                    <FolderViewerOuter />
-                    <TempNav />
+                    <ViewerOuterSettings />
                 </>
             ) : (
                 <>
                     <div className="mobile-wrap">
                         <NavbarFiles />
 
-                        <FolderViewerOuter />
+                        <ViewerOuterSettings />
                     </div>
 
                 </>
             )}
         </div>
+
+
+
+
+
+
     );
 }

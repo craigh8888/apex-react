@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import '../../App.css';
-import SidebarMenu from '../SidebarMenu';
-import FolderViewerOuter from '../FolderViewerOuter';
-import LoginBox from '../LoginBox';
-import NavbarFiles from '../navbarFiles';
+import '../styles/App.css';
+import SidebarMenu from '../components/SidebarMenu';
+import FolderViewerOuter from '../components/FolderViewerOuter';
+import LoginBox from '../components/LoginBox';
+import NavbarFiles from '../components/navbarFiles';
 
-import TempNav from '../tempNav';
+import TempNav from '../components/tempNav';
 
 export default function AllFiles() {
 

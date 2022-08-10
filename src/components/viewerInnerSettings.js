@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import './ViewerInner.css';
-import './AccountSettings.css';
+import '../styles/ViewerInner.css';
+import '../styles/AccountSettings.css';
 import { Link } from 'react-router-dom';
-import { ReactComponent as FoldersIcon } from '../icon-folder-blue.svg';
-import { ReactComponent as ButtonAddFolderIcon } from '../add-folder.svg';
+import { ReactComponent as FoldersIcon } from '../images/icon-folder-blue.svg';
+import { ReactComponent as ButtonAddFolderIcon } from '../images/add-folder.svg';
 
-import { ReactComponent as ButtonUploadFilesIcon } from '../upload-files.svg';
+import { ReactComponent as ButtonUploadFilesIcon } from '../images/upload-files.svg';
 
-import { ReactComponent as FolderIconBabyBlue } from '../folder-light-blue.svg';
+import { ReactComponent as FolderIconBabyBlue } from '../images/folder-light-blue.svg';
 
 // import { ReactComponent as ImageIcon } from '../image.svg';
-import { ReactComponent as DownArrow } from '../down-arrow.svg';
-import { ReactComponent as RightArrow } from '../right-arrow.svg';
-import { ReactComponent as DownloadIcon } from '../download-invoice.svg';
-import { ReactComponent as SettingsIcon } from '../wallet-management.svg';
-import { ReactComponent as SettingsSliderIcon } from '../settings-slider-icon.svg';
+import { ReactComponent as DownArrow } from '../images/down-arrow.svg';
+import { ReactComponent as RightArrow } from '../images/right-arrow.svg';
+import { ReactComponent as DownloadIcon } from '../images/download-invoice.svg';
+import { ReactComponent as SettingsIcon } from '../images/wallet-management.svg';
+import { ReactComponent as SettingsSliderIcon } from '../images/settings-slider-icon.svg';
 import CurrentStorage from './CurrentStorage';
 
 function ViewerInner() {

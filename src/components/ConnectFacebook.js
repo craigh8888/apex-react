@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import './ConnectFacebook.css';
+import '../styles/ConnectFacebook.css';
 
-import { ReactComponent as FbLogo } from './facebook.svg';
+import { ReactComponent as FbLogo } from '../images/facebook.svg';
 
 
 function ConnectFacebook() {

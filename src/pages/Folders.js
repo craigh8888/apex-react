@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import '../../App.css';
-import SidebarMenu from '../SidebarMenu';
-import ViewerOuterMediaLibrary from '../viewerOuterMediaLibrary';
-import LoginBox from '../LoginBox';
-import NavbarFiles from '../navbarFiles';
-import TempNav from '../tempNav';
+import '../styles/App.css';
+import SidebarMenu from '../components/SidebarMenu';
+import FolderViewerOuter from '../components/viewerOuterFolder';
+import LoginBox from '../components/LoginBox';
+import NavbarFiles from '../components/navbarFiles';
 
-export default function MediaFolder() {
+import TempNav from '../components/tempNav';
 
+export default function Favourites() {
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
 
@@ -21,16 +21,13 @@ export default function MediaFolder() {
 
     }, []);
 
-
     return (
-
-
         <div>
             {isDesktop ? (
                 <>
 
                     <SidebarMenu />
-                    <ViewerOuterMediaLibrary />
+                    <FolderViewerOuter />
                     <TempNav />
                 </>
             ) : (
@@ -38,17 +35,11 @@ export default function MediaFolder() {
                     <div className="mobile-wrap">
                         <NavbarFiles />
 
-                        <ViewerOuterMediaLibrary />
+                        <FolderViewerOuter />
                     </div>
 
                 </>
             )}
         </div>
-
-
-
-
-
-
     );
 }

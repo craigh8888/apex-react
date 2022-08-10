@@ -1,12 +1,12 @@
 import React from 'react';
-import './UploadFiles.css';
+import '../styles/UploadFiles.css';
 import './file-upload.js';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 // import { Link } from 'react-router-dom';
-import { ReactComponent as CloudIcon } from '../cloud-icon.svg';
-import { ReactComponent as ModalCloseIcon } from '../close-modal.svg';
-import FolderLocation from '../foldericon-blue.png';
+import { ReactComponent as CloudIcon } from '../images/cloud-icon.svg';
+import { ReactComponent as ModalCloseIcon } from '../images/close-modal.svg';
+import FolderLocation from '../images/foldericon-blue.png';
 // import { ReactComponent as Mail } from '../mail.svg';
 // import { ReactComponent as Discord } from '../discord.svg';
 // import { ReactComponent as M } from '../m.svg';

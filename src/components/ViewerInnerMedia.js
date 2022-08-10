@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import './ViewerInner.css';
+import '../styles/ViewerInner.css';
 import { Link } from 'react-router-dom';
-import { ReactComponent as FoldersIcon } from '../icon-folder-blue.svg';
-import { ReactComponent as ButtonAddFolderIcon } from '../add-folder.svg';
+import { ReactComponent as FoldersIcon } from '../images/icon-folder-blue.svg';
+import { ReactComponent as ButtonAddFolderIcon } from '../images/add-folder.svg';
 // import NFTimage from './account-owl.png';
-import { ReactComponent as ButtonUploadFilesIcon } from '../upload-files.svg';
-import MediaImage from '../media-library.jpg';
+import { ReactComponent as ButtonUploadFilesIcon } from '../images/upload-files.svg';
+import MediaImage from '../images/media-library.jpg';
 
-import { ReactComponent as NFTViewerIcon } from '../nft-viewer.svg';
-import { ReactComponent as NFTActionsIcon } from '../nft-actions.svg';
+import { ReactComponent as NFTViewerIcon } from '../images/nft-viewer.svg';
+import { ReactComponent as NFTActionsIcon } from '../images/nft-actions.svg';
 // import { ReactComponent as FolderIconBabyBlue } from '../folder-light-blue.svg';
 // import { ReactComponent as ImageIcon } from '../image.svg';
 // import { ReactComponent as DownArrow } from '../down-arrow.svg';

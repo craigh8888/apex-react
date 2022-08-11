@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 
 import './styles/App.css';
 import Home from './pages/Home';
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
      
-        {/* <Navbar /> */}
+       {/* <Navbar /> */}
         <Routes>
           <Route exact path='/apex-react/' element={<Home />} />
           <Route path="/apex-react/AllFiles" element={<AllFiles />} />

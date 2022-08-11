@@ -32,6 +32,7 @@ function App() {
           <Route path="/apex-react/favourites" element={<Favourites />} />
           <Route path="/apex-react/settings" element={<AllFilesSettings />} />
           <Route path="/apex-react/media-library" element={<FolderMedia />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       
 

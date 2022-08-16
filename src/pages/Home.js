@@ -9,9 +9,8 @@ import TempNav from '../components/tempNav';
 import SignUp from './SignUp';
 
 
-function Home() {
+function Home({onboarded,setOnboarded,wallet,setWallet}) {
 
-    const [onboarded, setOnboarded] = useState(false)
 
 
     return (
@@ -22,7 +21,12 @@ function Home() {
             <Footer /> <Footer /> */ 
 
             }
-            {!onboarded ? <SignUp /> : <></>}
+            {!onboarded ? <SignUp 
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            /> : <></>}
             <TempNav />
             <UploadFiles />
 

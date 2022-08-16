@@ -1,33 +1,181 @@
+
 .sign-up{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
+    align-self: center;
+    padding: none;
+    background: url('../images/image-bg.svg') center center/cover no-repeat;
 
+}
+.sign-up .overlay{
+    background: url('../images/overlay-bg.png') center center/cover no-repeat;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0;
+    height: calc(100% + 80px);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.sign-up-header{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+color: #040936;
 }
 .onboard{
     display: flex;
     flex-direction: column;
-    width: 75%;
-    height: 75%;
-    border: 4px black solid;
+    position: absolute;
+    width: 389px;
+    height: 362px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 
+}
+.onboard-body{
+    display: flex;
+    flex-direction: row;
+    width: border-box;
+    height: 100%;
+    justify-content: end;
+    align-items: flex-end;
+}
+.btn{
+margin: 2%;
+width: 341px;
+height: 46px;
+background: #00224C;
+border-radius: 12px;
+color: #FFFFFF;
+align-self: flex-end;
+}
+.back-btn{
+    display: flex;
+    width:fit-content;
+    background: #00224C;
+    border-radius: 5px;
+    color: #FFFFFF;
+    align-self: flex-start;
+    cursor: pointer;
+
+}
+.input{
+    display: flex;
+    width: border-box;
+    height: 46px;
+    background: #F0F0F0;
+    border-radius: 12px;
+    margin: 2%;
+}
+.input-verify{
+    display: flex;
+    width: 90%;
+    height: 2em;
+    background: #F0F0F0;
+    border-radius: 12px;
 }
 .import-wallet{
     display: flex;
     flex-direction: column;
-    width: 75%;
-    height: 75%;
-    border: 4px black solid;
+    position: absolute;
+    width: 389px;
+    height: 362px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 
 }
+.import-wallet-header{
+    display: flex;
+    flex-direction: row;
+    width: border-box;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2%;
+}
+.import-wallet-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.import-wallet-footer{
+    display: flex;
+    flex-direction: row;
+    width: border-box;
+    height: fit-content;
+    justify-content: center;
+    margin: 2%;
+}
+
 .create-wallet{
     display: flex;
     flex-direction: column;
-    width: 75%;
-    height: 75%;
-    border: 4px black solid;
+    position: absolute;
+    width: 389px;
+    height: 362px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 
+}
+.create-wallet-header{
+    display: flex;
+    flex-direction: row;
+    width: border-box;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2%;
+}
+.create-wallet-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+    justify-content: center;
+    
+    
+}
+.create-wallet-footer{
+    display: flex;
+    flex-direction: row;
+    width: border-box;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2%;
+}
+.create-wallet-verify-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: border-box;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+    row-gap: 1%;
+    padding: 2%;
+
+    
 }

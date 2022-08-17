@@ -20,3 +20,39 @@ const LoadingSpinner = () => {
 }
 
 export default LoadingSpinner
+
+/** css required for spinner >>>>
+ * 
+ * 
+ *   @keyframes ldio-rgj7pqnl2b {
+        0% { background: #005d75 }
+        8.333333333333334% { background: #005d75 }
+        8.416666666666666% { background: #1877f2 }
+        100% { background: #1877f2 }
+      }
+      .ldio-rgj7pqnl2b div {
+        position: absolute;
+        width: 34.2px;
+        height: 34.2px;
+        background: #1877f2;
+        animation: ldio-rgj7pqnl2b 1.639344262295082s linear infinite;
+      }
+      .loadingio-spinner-blocks-4psddnlisx6 {
+        width: 171px;
+        height: 171px;
+        display: inline-block;
+        overflow: hidden;
+        background: #ffffff;
+      }
+      .ldio-rgj7pqnl2b {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0 0; 
+        }
+          .ldio-rgj7pqnl2b div { box-sizing: content-box; }
+        
+
+ */

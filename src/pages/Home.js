@@ -16,7 +16,7 @@ function Home({loggedIn, setLoggedIn, onboarded,setOnboarded,wallet,setWallet}) 
 
 
     return (
-        <>
+        <div className='home'>
             <Navbar />
            {/* <HeroSection /> : <></>}
             {/* <Cards />
@@ -36,12 +36,12 @@ function Home({loggedIn, setLoggedIn, onboarded,setOnboarded,wallet,setWallet}) 
             wallet={wallet}
             setWallet={setWallet}
             setOnboarded={setOnboarded}
-            /> : <div className="overlay"></div>
+            /> : <div className="home-overlay"></div>
             }
             <TempNav />
             <UploadFiles />
 
-        </>
+        </div>
     );
 }
 

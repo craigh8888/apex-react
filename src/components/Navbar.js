@@ -10,7 +10,7 @@ import { ReactComponent as ButtonAddFolderIcon } from '../images/add-folder.svg'
 import { ReactComponent as ButtonUploadFilesIcon } from '../images/upload-files.svg';
 
 function Navbar() {
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
 
     const updateMedia = () => {
         setDesktop(window.innerWidth > 978);
@@ -32,10 +32,13 @@ function Navbar() {
 
     useEffect(() => {
         window.addEventListener("resize", updateMedia);
+       
         return () => window.removeEventListener("resize", updateMedia);
-
         showButton();
+
+        
     }, []);
+
     window.addEventListener('resize', showButton);
 
     return (

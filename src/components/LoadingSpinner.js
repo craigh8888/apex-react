@@ -2,7 +2,7 @@ const LoadingSpinner = () => {
 
     return(
         <div className="loadingio-spinner-blocks-4psddnlisx6">
-            <div class="ldio-rgj7pqnl2b">
+            <div className="ldio-rgj7pqnl2b">
 <div style={{left:"14.535px",top:"14.535px",animationDelay:"0s"}}></div>
 <div style={{left:"50.445px",top:"14.535px",animationDelay:"0.13661202185792348s"}}></div>
 <div style={{left:"86.355px",top:"14.535px",animationDelay:"0.27322404371584696s"}}></div>

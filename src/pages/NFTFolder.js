@@ -9,7 +9,7 @@ import NavbarFiles from '../components/navbarFiles';
 export default function NFTFolder() {
 
 
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
 
     const updateMedia = () => {
         setDesktop(window.innerWidth > 978);

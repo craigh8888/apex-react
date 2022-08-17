@@ -43,6 +43,16 @@ export default function SignUp({onboarded,setOnboarded,wallet,setWallet}) {
         const newMnemonic = wordarray.map((word, index) => finalWords[index] = word)
         setMnemonic(finalWords)
         console.log(console.log(finalWords))
+        
+    }
+    async function importWallet(){
+        console.log(mnemonic)
+        const HDNode = await ethers.utils.HDNode.fromMnemonic(mnemonic)
+        await setWallet(HDNode)
+        console.log(HDNode)
+        encryptWallet()
+        setOnboarded(true)
+        
     }
     async function encryptWallet(){
         alert("encrypting")
@@ -51,6 +61,7 @@ export default function SignUp({onboarded,setOnboarded,wallet,setWallet}) {
         window.localStorage.setItem("apex-cloud-wallet", parsed)
 
     }
+   
 
     return (
         
@@ -155,7 +166,7 @@ export default function SignUp({onboarded,setOnboarded,wallet,setWallet}) {
                 <input className="input"type="text" value={mnemonic} onChange={(e)=>{setMnemonic(e.target.value)}} placeholder="mnemonic phrase"/>
                 </div>
                 <div className='import-wallet-footer'>
-                <button className="btn"onClick={()=>{alert("importing...")}}>import</button>
+                <button className="btn"onClick={()=>{importWallet()}}>import</button>
                 </div>
                 
                 

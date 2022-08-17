@@ -16,7 +16,7 @@ function Home({onboarded,setOnboarded,wallet,setWallet}) {
     return (
         <>
             <Navbar />
-           {onboarded ? <HeroSection /> : <></>}
+           {/* <HeroSection /> : <></>}
             {/* <Cards />
             <Footer /> <Footer /> */ 
 

@@ -19,14 +19,14 @@ import Folders from './pages/Folders';
 function App() {
 
   const [onboarded, setOnboarded] = useState(false)
-  const [login, setLogin] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(false)
   
   const [wallet, setWallet] = useState()
 
   useEffect(()=>{
     if (window.localStorage.getItem("apex-cloud-wallet")){
       setOnboarded(true)
-      setLogin(true)
+      
     }
     else {
       setOnboarded(false)
@@ -37,24 +37,84 @@ function App() {
      
        {/* <Navbar /> */}
         <Routes>
+          <Route path="*" element={<Home />} />
           <Route exact path='/apex-react/' element={
           <Home 
           onboarded={onboarded}
           setOnboarded={setOnboarded}
           wallet={wallet}
           setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
           />} />
-          <Route path="/apex-react/AllFiles" element={<AllFiles />} />
-          <Route path="/apex-react/NFTFolder" element={<NFTFolder />} />
+          
           <Route path="/apex-react/team" element={<Team />} />
-          <Route path="/apex-react/folders" element={<Folders />} />
           <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
-          <Route path="/apex-react/products" element={<Products />} />
-          <Route path="/apex-react/sign-up" element={<SignUp />} /> 
-          <Route path="/apex-react/favourites" element={<Favourites />} />
-          <Route path="/apex-react/settings" element={<AllFilesSettings />} />
-          <Route path="/apex-react/media-library" element={<FolderMedia />} />
-          <Route path="*" element={<Home />} />
+
+          <Route path="/apex-react/AllFiles" element={loggedIn ? <AllFiles /> :  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
+          <Route path="/apex-react/NFTFolder" element={loggedIn ? <NFTFolder />:  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
+          <Route path="/apex-react/folders" element={loggedIn ? <Folders />:  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
+          <Route path="/apex-react/products" element={loggedIn ? <Products />:  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
+          <Route path="/apex-react/favourites" element={loggedIn ? <Favourites />:  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
+          <Route path="/apex-react/settings" element={loggedIn ? <AllFilesSettings />:  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
+          <Route path="/apex-react/media-library" element={loggedIn ? <FolderMedia />:  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
+          
         </Routes>
       
 

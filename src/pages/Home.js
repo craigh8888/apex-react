@@ -7,9 +7,11 @@ import Navbar from '../components/Navbar';
 import UploadFiles from '../components/uploadFiles';
 import TempNav from '../components/tempNav';
 import SignUp from './SignUp';
+import Login from '../components/Login';
+import AllFiles from './AllFiles';
 
 
-function Home({onboarded,setOnboarded,wallet,setWallet}) {
+function Home({loggedIn, setLoggedIn, onboarded,setOnboarded,wallet,setWallet}) {
 
 
 
@@ -26,7 +28,13 @@ function Home({onboarded,setOnboarded,wallet,setWallet}) {
             setOnboarded={setOnboarded}
             wallet={wallet}
             setWallet={setWallet}
-            /> : <></>}
+            /> : <Login 
+            setLoggedIn={setLoggedIn}
+            loggedIn={loggedIn}
+            wallet={wallet}
+            setWallet={setWallet}
+            setOnboarded={setOnboarded}
+            />}
             <TempNav />
             <UploadFiles />
 

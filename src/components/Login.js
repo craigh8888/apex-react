@@ -28,7 +28,7 @@ const Login = ({wallet, setWallet, loggedIn,setLoggedIn, setOnboarded}) => {
                 <input className="input" type="text" placeholder="password" onChange={(e)=>{setPassword(e.target.value)}}/>
             </div>
             <div className="login-footer">
-                <button className="btn" onClick={()=>{setOnboarded(false)}}>Create Account</button>
+                <button className="btn-black" onClick={()=>{setOnboarded(false)}}>Create Account</button>
                 <button className="btn" onClick={()=>{decryptWallet()}}>Login</button>
                
             </div>

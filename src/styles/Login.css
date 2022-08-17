@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 389px;
-    height: 362px;
+    width: 30%;
+    height: fit-content;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -62,15 +62,18 @@
     justify-content: space-around;
     margin: 2%;
 }
-.btn{
+/* .btn{
+    display: flex;
     margin: 2%;
-    width: 341px;
-    height: 46px;
-    background: #00224C;
+    width: border-box;
+    height: 4em;
+    background-color: #1877F2;
     border-radius: 12px;
     color: #FFFFFF;
-    align-self: flex-end;
-    }
+   
+    justify-content: center;
+    align-items: center;
+    } */
 .input{
     display: flex;
     width: border-box;

@@ -70,7 +70,7 @@ export default function SignUp({onboarded,setOnboarded,wallet,setWallet}) {
             <div className='onboard'>
                 <h1 className="sign-up-header">Create or Import a wallet</h1>
                 <div className='onboard-body'>
-                <button className="btn" onClick={()=>{setContent("create");}}>Create Wallet</button>
+                <button className="btn-black" onClick={()=>{setContent("create");}}>Create Wallet</button>
                 <button className="btn" onClick={()=>{setContent("import")}}>Import Wallet</button>
                 </div>
             </div> 

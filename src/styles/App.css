@@ -1,7 +1,18 @@
 .App {
   text-align: center;
 }
-
+.overlay{
+  background: url('../images/overlay-bg.png') center center/cover no-repeat;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0;
+    height: calc(100% + 80px);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

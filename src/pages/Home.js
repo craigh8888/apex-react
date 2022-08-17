@@ -28,13 +28,16 @@ function Home({loggedIn, setLoggedIn, onboarded,setOnboarded,wallet,setWallet}) 
             setOnboarded={setOnboarded}
             wallet={wallet}
             setWallet={setWallet}
-            /> : <Login 
+            /> : 
+            !loggedIn ?
+            <Login 
             setLoggedIn={setLoggedIn}
             loggedIn={loggedIn}
             wallet={wallet}
             setWallet={setWallet}
             setOnboarded={setOnboarded}
-            />}
+            /> : <div className="overlay"></div>
+            }
             <TempNav />
             <UploadFiles />
 

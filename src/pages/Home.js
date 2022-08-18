@@ -3,7 +3,7 @@ import '../styles/App.css';
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 import Navbar from '../components/menus/Navbar';
-import UploadFiles from '../components/uploadFiles';
+import UploadFiles from '../components/modals/uploadFiles';
 import TempNav from '../components/menus/tempNav';
 import SignUp from '../components/modals/SignUp';
 import Login from '../components/modals/Login';

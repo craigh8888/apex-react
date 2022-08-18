@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/App.css';
 import SidebarMenu from './menus/SidebarMenu';
-import ViewerOuterSettings from './viewerouter/viewerOuterSettings';
+import ViewerInnerSettings from './viewerinner/viewerInnerSettings.js'
+import ViewerOuterSettings from './viewerouter/viewerOuterSettings.js'
 import NavbarFiles from './navbarFiles';
 
 
@@ -27,9 +28,7 @@ export default function Settings() {
         <div>
             {isDesktop ? (
                 <>
-
-                    <SidebarMenu />
-                    <ViewerOuterSettings />
+                    <ViewerInnerSettings />
                 </>
             ) : (
                 <>

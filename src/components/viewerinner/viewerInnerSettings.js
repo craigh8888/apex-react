@@ -17,9 +17,9 @@ import { ReactComponent as SettingsIcon } from '../../images/wallet-management.s
 import { ReactComponent as SettingsSliderIcon } from '../../images/settings-slider-icon.svg';
 import CurrentStorage from '../CurrentStorage';
 
-function ViewerInner() {
+function ViewerInnerSettings() {
 
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 1450);
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 1050);
 
     const updateMedia = () => {
         setDesktop(window.innerWidth > 978);
@@ -417,4 +417,4 @@ function ViewerInner() {
     );
 
 }
-export default ViewerInner;
+export default ViewerInnerSettings;

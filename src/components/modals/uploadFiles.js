@@ -1,12 +1,13 @@
 import React from 'react';
-import '../styles/UploadFiles.css';
-import './old/file-upload.js';
+import '../../styles/UploadFiles.css';
+import '../old/file-upload.js';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 // import { Link } from 'react-router-dom';
-import { ReactComponent as CloudIcon } from '../images/cloud-icon.svg';
-import { ReactComponent as ModalCloseIcon } from '../images/close-modal.svg';
-import FolderLocation from '../images/foldericon-blue.png';
+import { ReactComponent as CloudIcon } from '../../images/cloud-icon.svg';
+import { ReactComponent as ModalCloseIcon } from '../../images/close-modal.svg';
+import { ReactComponent as ButtonUploadFilesIcon } from '../../images/upload-files.svg';
+import FolderLocation from '../../images/foldericon-blue.png';
 // import { ReactComponent as Mail } from '../mail.svg';
 // import { ReactComponent as Discord } from '../discord.svg';
 // import { ReactComponent as M } from '../m.svg';
@@ -16,7 +17,7 @@ export default function UploadFiles() {
         <>
             <div className='pop-up-wrapper' id="home-modal">
                 <Popup
-                    trigger={<button className="button"> Open TEST Modal </button>}
+                    trigger={<button className="button-top upload-files">Upload Files  <ButtonUploadFilesIcon /></button>}
                     modal
                     nested
                 >

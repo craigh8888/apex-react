@@ -63,7 +63,7 @@ function Navbar() {
                             </li>
                             <li className='nav-item'>
                                 <Link
-                                    to='/apex-react/AllFiles'
+                                    to='/apex-react/Dashboard'
                                     className='nav-links'
                                     onClick={closeMobileMenu}
                                 >

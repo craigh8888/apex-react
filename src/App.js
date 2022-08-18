@@ -1,23 +1,24 @@
 import {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar';
+import Navbar from './components/menus/Navbar';
 import ethers from 'ethers'
 
 import './styles/App.css';
 import Home from './pages/Home';
-import SignUp from './pages/SignUp'
+import SignUp from './components/modals/SignUp'
 import Products from './pages/Products'
 import AdvisoryBoard from './pages/AdvisoryBoard'
 import Team from './pages/Team';
-import AllFiles from './pages/AllFiles';
-import NFTFolder from './pages/NFTFolder';
-import AllFilesSettings from './pages/Settings-allfiles';
-import Favourites from './pages/Favourites';
-import FolderMedia from './pages/MediaLibrary';
-import Folders from './pages/Folders';
+import AllFiles from './components/old/AllFiles';
+import NFTFolder from './components/NFTFolder';
+import Settings from './components/Settings';
+import Favourites from './components/Favourites';
+import FolderMedia from './components/MediaLibrary';
+import Folders from './components/Folders';
 
 import { WebBundlr } from '@bundlr-network/client';
 import CustomEthereumConfig from './lib/bundlr/customCurrencyConfigs/ethereum.ts'
+import Dashboard from './pages/Dashboard';
 
 function App() {
 
@@ -84,6 +85,15 @@ function App() {
           
           <Route path="/apex-react/team" element={<Team />} />
           <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
+          <Route path="/apex-react/Dashboard" element={loggedIn ? <Dashboard /> :  
+          <Home 
+          onboarded={onboarded}
+          setOnboarded={setOnboarded}
+          wallet={wallet}
+          setWallet={setWallet}
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          />} />
 
           <Route path="/apex-react/AllFiles" element={loggedIn ? <AllFiles /> :  
           <Home 
@@ -130,7 +140,7 @@ function App() {
           loggedIn={loggedIn}
           setLoggedIn={setLoggedIn}
           />} />
-          <Route path="/apex-react/settings" element={loggedIn ? <AllFilesSettings />:  
+          <Route path="/apex-react/settings" element={loggedIn ? <Settings />:  
           <Home 
           onboarded={onboarded}
           setOnboarded={setOnboarded}

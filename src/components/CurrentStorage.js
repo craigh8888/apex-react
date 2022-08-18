@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import '../styles/current-storage.css';
-import Percentagewheel from './PercentageWheel';
+import Percentagewheel from './old/PercentageWheel';
 import { Link } from 'react-router-dom';
 
 function CurrentStorage() {

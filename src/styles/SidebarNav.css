@@ -72,6 +72,7 @@ span.svgwrap svg {
     display: block;
     padding: 8px 8px 10px 8px;
     text-align: left;
+    cursor: pointer;
 }
 
 .item-wrap a {

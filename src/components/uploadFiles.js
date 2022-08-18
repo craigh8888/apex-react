@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/UploadFiles.css';
-import './file-upload.js';
+import './old/file-upload.js';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 // import { Link } from 'react-router-dom';

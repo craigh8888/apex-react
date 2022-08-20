@@ -2,7 +2,7 @@
   "name": "apex-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.apexcloud.io",
+  "homepage": "https://my.apexcloud.app",
   "dependencies": {
     "@bundlr-network/client": "^0.7.17",
     "@testing-library/jest-dom": "^5.16.4",

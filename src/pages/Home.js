@@ -7,6 +7,7 @@ import UploadFiles from '../components/modals/uploadFiles';
 import TempNav from '../components/menus/tempNav';
 import SignUp from '../components/modals/SignUp';
 import Login from '../components/modals/Login';
+import LoginBox from '../components/LoginBox'
 
 
 
@@ -22,14 +23,14 @@ function Home({loggedIn, setLoggedIn, onboarded,setOnboarded,wallet,setWallet}) 
             <Footer /> <Footer /> */ 
 
             }
-            {!onboarded ? <SignUp 
+            {!onboarded ? <LoginBox 
             onboarded={onboarded}
             setOnboarded={setOnboarded}
             wallet={wallet}
             setWallet={setWallet}
             /> : 
             !loggedIn ?
-            <Login 
+            <LoginBox 
             setLoggedIn={setLoggedIn}
             loggedIn={loggedIn}
             wallet={wallet}

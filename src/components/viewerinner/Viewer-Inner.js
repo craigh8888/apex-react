@@ -63,7 +63,7 @@ function ViewerInner({viewName,buttons, headerNames,rows, pagination}) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                {rows.length > 0 ? rows.map((row, index)=>{return row}) : <tr>
+                                {rows?.length > 0 ? rows.map((row, index)=>{return row}) : <tr>
                                     <td></td>
                                     <td>No Files Found</td>
                                     </tr>}

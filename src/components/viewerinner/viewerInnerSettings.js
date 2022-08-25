@@ -17,7 +17,7 @@ import { ReactComponent as SettingsIcon } from '../../images/wallet-management.s
 import { ReactComponent as SettingsSliderIcon } from '../../images/settings-slider-icon.svg';
 import CurrentStorage from '../CurrentStorage';
 
-function ViewerInnerSettings() {
+function ViewerInnerSettings({wallet}) {
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1050);
 
@@ -72,7 +72,7 @@ function ViewerInnerSettings() {
                                     <table>
                                         <tr>
                                             <td> <p className="connect-wallet title">connected wallet</p>
-                                                <p className="wallet-address">0x4be...8dff</p>
+                                                <p className="wallet-address">{wallet?.address}</p>
                                             </td>
                                             <td>
                                                 <p className='currency'>13.45 Avax</p>

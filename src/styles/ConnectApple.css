@@ -1,4 +1,5 @@
 .btns-apple button {
     background-color: #131313;
     cursor: pointer;
+    z-index: 1;
 }

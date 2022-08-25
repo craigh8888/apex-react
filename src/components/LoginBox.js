@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from './Button';
 import '../styles/LoginBox.css';
 import { Link } from 'react-router-dom';
 import ConnectMetamask from './ConnectMetamask';
@@ -9,7 +8,7 @@ import ConnectApple from './ConnectApple';
 
 function LoginBox() {
     return (
-        <div className='login-box-wrap'>
+        <div className='login-box-wrap'><div className="home-overlay"></div>
 
             <p className='title-login'>Login to Apex Cloud</p>
             <p className='title-para'>Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur</p>

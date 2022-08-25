@@ -6,7 +6,7 @@ import ViewerOuterSettings from './viewerouter/viewerOuterSettings.js'
 import NavbarFiles from './navbarFiles';
 
 
-export default function Settings() {
+export default function Settings({wallet}) {
 
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
@@ -28,7 +28,7 @@ export default function Settings() {
         <div>
             {isDesktop ? (
                 <>
-                    <ViewerInnerSettings />
+                    <ViewerInnerSettings wallet={wallet}/>
                 </>
             ) : (
                 <>

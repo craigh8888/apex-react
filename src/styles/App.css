@@ -5,6 +5,8 @@
   height: 100%;
   padding: none;
   background: url('../images/image-bg.svg') center center/cover no-repeat;
+  align-content: center;
+  justify-content: center;
 
 }
 .home .home-overlay{

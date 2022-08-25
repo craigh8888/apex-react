@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../styles/percentagewheel.css';
+import '../styles/percentagewheel.css';
 import './wheel-script.js';
 
 export default class percentagewheel extends Component {

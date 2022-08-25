@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/menus/Navbar';
-import ethers from 'ethers'
+import {ethers} from 'ethers'
+import BigNumber from 'bignumber.js';
 
 import './styles/App.css';
 import Home from './pages/Home';
@@ -22,26 +23,19 @@ import Dashboard from './pages/Dashboard';
 
 function App() {
 
-  const [onboarded, setOnboarded] = useState(false)
-  const [loggedIn, setLoggedIn] = useState(false)
+  const [onboarded, setOnboarded] = useState(true)
+  const [loggedIn, setLoggedIn] = useState(true)
   const [wallet, setWallet] = useState()
 
+  const [fundAmount, setFundAmount] = useState("")
   const [bundlr, setBundlr] = useState()
-  const [bundlrNode, setBundlrNode] = useState("http://node1.bundlr.network");
+  const [bundlrNode, setBundlrNode] = useState("https://node2.bundlr.network");
   const [currencyNetwork, setCurrencyNetwork] = useState("matic");
   const [bundlrAddress, setBundlrAddress] = useState();
   const [bundlrBalance, setBundlrBalance] = useState()
   const [fileLinks, setFileLinks] = useState()
 
-  useEffect(()=>{
-    if (window.localStorage.getItem("apex-cloud-wallet")){
-      setOnboarded(true)
-      
-    }
-    else {
-      setOnboarded(false)
-    }
-  },[])
+
 
   useEffect(()=>{
     if (loggedIn){
@@ -53,19 +47,47 @@ function App() {
   },[loggedIn,onboarded])
 
   async function initBundlr () {
-    const config = new CustomEthereumConfig({ name: "matic", ticker: "MATIC", providerUrl: "https://polygon-rpc.com", wallet: wallet.privateKey, minConfirm: 3 })
-    const bundlr = new WebBundlr(bundlrNode, currencyNetwork, wallet.privateKey);
-    bundlr.currencyConfig = config
-    bundlr.uploader.currencyConfig = config
-    await setBundlr(bundlr)
-    console.log(bundlr)
+    await window.ethereum.enable()
+  
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider._ready()
+  
+    const bundler = new WebBundlr("https://node1.bundlr.network", "matic", provider)
+    await bundler.ready()
     
-
+    setBundlr(bundler)
+    fetchBalance()
   }
 
-  async function fetchFiles (){
-
+  async function fundBundlr () {
+    if (!fundAmount) {
+    const amountParsed = parseInput(fundAmount)
+    let response = await bundlr.fund(amountParsed)
+    fetchBalance()
+    return console.log('Wallet funded: ', response)
+    
   }
+     
+    }
+
+
+    function parseInput (input) {
+      const conv = new BigNumber(input).multipliedBy(bundlr.currencyConfig.base[1])
+      if (conv.isLessThan(1)) {
+        console.log('error: value too small')
+        return
+      } else {
+        return conv
+      }
+    }
+    async function fetchBalance () {
+      const bal = await bundlr.current.getLoadedBalance()
+      console.log('bal: ', ethers.utils.formatEther(bal.toString()))
+      setBundlrBalance(ethers.utils.formatEther(bal.toString()))
+  
+    }
+
+  
 
   return (
     <>
@@ -85,7 +107,7 @@ function App() {
           
           <Route path="/apex-react/team" element={<Team />} />
           <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
-          <Route path="/apex-react/Dashboard" element={loggedIn ? <Dashboard /> :  
+          <Route path="/apex-react/Dashboard" element={loggedIn ? <Dashboard bundlr={bundlr}  address={wallet?.address} wallet={wallet}/> :  
           <Home 
           onboarded={onboarded}
           setOnboarded={setOnboarded}
@@ -93,6 +115,7 @@ function App() {
           setWallet={setWallet}
           loggedIn={loggedIn}
           setLoggedIn={setLoggedIn}
+          address={wallet?.address}
           />} />
 
           <Route path="/apex-react/AllFiles" element={loggedIn ? <AllFiles /> :  

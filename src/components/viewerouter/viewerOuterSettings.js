@@ -3,14 +3,14 @@ import '../../styles/FolderViewerOuter.css';
 
 import ViewerInnerSettings from '../viewerinner/viewerInnerSettings.js';
 
-function FolderViewerOuterSettings() {
+function FolderViewerOuterSettings({bundlrBalance}) {
     return (
 
         <div className='folder-viewer-outer'>
             <div className='overlay'>
                 <div className='viewer-inner'>
                     <div>
-                        <ViewerInnerSettings />
+                        <ViewerInnerSettings bundlrBalance={bundlrBalance}/>
                     </div>
                 </div>
             </div>

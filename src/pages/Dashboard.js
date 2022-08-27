@@ -12,11 +12,13 @@ import Settings from "../components/Settings"
 import AllFiles from '../components/AllFiles';
 import FileQuery from '../lib/arweave/GQL/FileQuery'
 import {arweave} from '../lib/arweave/arweave'
+import OnRamperModal from '../components/modals/OnRamperModal';
 
-export default function Dashboard({bundlr,address, wallet}) {
+export default function Dashboard({bundlr,bundlrAddress, wallet, bundlrBalance, fundBundlr, fetchBalance}) {
 
     const [innerContent, setInnerContent] = useState("folders")  
     const [isDesktop, setDesktop] = useState(window.innerWidth > 100);
+    const [onramper, setOnramper] = useState(false)
     
     const [newFiles, setNewFiles] = useState([])
     const [filePreviews, setFilePreviews] = useState([])
@@ -28,17 +30,23 @@ export default function Dashboard({bundlr,address, wallet}) {
 
     useEffect(()=>{
         const queryInterval = setInterval(query(), 60000)
-       
+        
         if (bundlr === null){
             clearInterval(queryInterval)
+            
         }
     },[])
+    useEffect(()=>{
+        //const onramperModal = document.getElementById("onramper-modal")
+        //onramperModal.addEventListener("click", setOnramper(false))
+        fetchBalance()
+    },[innerContent])
  
 
 
     async function query () {
         
-        const filequery = FileQuery(address);
+        const filequery = FileQuery(bundlrAddress);
         const fileresults = await arweave.api.post('/graphql', filequery)
         .catch(err => {
           console.error('GraphQL query failed');
@@ -79,7 +87,10 @@ export default function Dashboard({bundlr,address, wallet}) {
         <div>
             {isDesktop ? (
                 <>
-                    
+                    {onramper ? <OnRamperModal 
+                    address={bundlrAddress}
+                    setOnramper={setOnramper}
+                    /> : <></>}
                     <SidebarMenu 
                     setInnerContent={setInnerContent}
                     />
@@ -98,13 +109,18 @@ export default function Dashboard({bundlr,address, wallet}) {
                       bundlr={bundlr}
                       queryResult={queryResult}
                       setQueryResult={setQueryResult}
-                      address={address}
+                      address={bundlrAddress}
                       query={query}
                       /> : <></>}
                        {innerContent === "folders" ? <Folders /> : <></>}
                        {innerContent === "archive" ? <Archive /> : <></>}
                        {innerContent === "favorites" ? <Favourites /> : <></>}
-                       {innerContent === "settings" ? <Settings wallet={wallet}/> : <></>}
+                       {innerContent === "settings" ? <Settings 
+                       bundlrAddress={bundlrAddress}
+                       bundlrBalance={bundlrBalance}
+                       fundBundlr={fundBundlr}
+                       setOnramper={setOnramper}
+                       /> : <></>}
                     </div>
                 </div>
             </div>

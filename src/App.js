@@ -27,7 +27,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(true)
   const [wallet, setWallet] = useState()
 
-  const [fundAmount, setFundAmount] = useState("")
+  const [fundAmount, setFundAmount] = useState(1)
   const [bundlr, setBundlr] = useState()
   const [bundlrNode, setBundlrNode] = useState("https://node2.bundlr.network");
   const [currencyNetwork, setCurrencyNetwork] = useState("matic");
@@ -40,6 +40,7 @@ function App() {
   useEffect(()=>{
     if (loggedIn){
       console.log("initializing bundlr")
+      console.log(window.ethereum)
       initBundlr()
     }
 
@@ -56,15 +57,19 @@ function App() {
     await bundler.ready()
     
     setBundlr(bundler)
+    setBundlrAddress(bundler.address.toString())
+    console.log(bundler.address)
     fetchBalance()
   }
 
   async function fundBundlr () {
-    if (!fundAmount) {
+    alert("funding")
+    if (fundAmount) {
     const amountParsed = parseInput(fundAmount)
     let response = await bundlr.fund(amountParsed)
     fetchBalance()
     return console.log('Wallet funded: ', response)
+    
     
   }
      
@@ -81,9 +86,13 @@ function App() {
       }
     }
     async function fetchBalance () {
-      const bal = await bundlr.current.getLoadedBalance()
+      const bal = await bundlr.getLoadedBalance()
       console.log('bal: ', ethers.utils.formatEther(bal.toString()))
-      setBundlrBalance(ethers.utils.formatEther(bal.toString()))
+      const format = ethers.utils.formatEther(bal.toString()) 
+      if (format.length < 6){setBundlrBalance(format)} else {
+        const trim = format.slice(0, 6)
+        setBundlrBalance(trim)
+      }
   
     }
 
@@ -107,7 +116,14 @@ function App() {
           
           <Route path="/apex-react/team" element={<Team />} />
           <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
-          <Route path="/apex-react/Dashboard" element={loggedIn ? <Dashboard bundlr={bundlr}  address={wallet?.address} wallet={wallet}/> :  
+          <Route path="/apex-react/Dashboard" element={loggedIn ? 
+          <Dashboard 
+          bundlr={bundlr}  
+          bundlrBalance={bundlrBalance}
+          fundBundlr={fundBundlr}   
+          fetchBalance={fetchBalance}
+          bundlrAddress={bundlrAddress}       /> 
+          :  
           <Home 
           onboarded={onboarded}
           setOnboarded={setOnboarded}

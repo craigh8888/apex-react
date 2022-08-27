@@ -16,10 +16,12 @@ import { ReactComponent as DownloadIcon } from '../../images/download-invoice.sv
 import { ReactComponent as SettingsIcon } from '../../images/wallet-management.svg';
 import { ReactComponent as SettingsSliderIcon } from '../../images/settings-slider-icon.svg';
 import CurrentStorage from '../CurrentStorage';
+import OnRamperModal from '../modals/OnRamperModal';
 
-function ViewerInnerSettings({wallet}) {
+function ViewerInnerSettings({bundlrAddress, bundlrBalance, fundBundlr, setOnramper}) {
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1050);
+    
 
     const updateMedia = () => {
         setDesktop(window.innerWidth > 978);
@@ -35,7 +37,7 @@ function ViewerInnerSettings({wallet}) {
         <div>
             {isDesktop ? (
                 <>
-
+                    
                     <div className='desktop-wrapper-file-viewer'>
                         <div className='ViewerInner'>
                             <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
@@ -72,10 +74,10 @@ function ViewerInnerSettings({wallet}) {
                                     <table>
                                         <tr>
                                             <td> <p className="connect-wallet title">connected wallet</p>
-                                                <p className="wallet-address">{wallet?.address}</p>
+                                                <p className="wallet-address">{bundlrAddress?.slice(0,5)}...{bundlrAddress?.slice(-4,bundlrAddress?.length)}</p>
                                             </td>
                                             <td>
-                                                <p className='currency'>13.45 Avax</p>
+                                                <p className='currency'>{bundlrBalance ? bundlrBalance : "0.00"}</p>
                                             </td>
                                             <td>
                                                 <Link className="show-all account-currency" to="#">Show All</Link>
@@ -83,7 +85,7 @@ function ViewerInnerSettings({wallet}) {
                                             </td>
                                             <td className='button-td'>
                                                 <div className='view-files-wrapper'>
-                                                    <Link className="view-files buy" to="#">Buy</Link>
+                                                    <button className="view-files buy"onClick={()=>{setOnramper(true)}}>Buy</button>
                                                     <Link className="view-files send" to="#">Send</Link>
                                                     <Link className="view-files swap" to="#">Swap</Link>
                                                 </div>
@@ -150,7 +152,7 @@ function ViewerInnerSettings({wallet}) {
                                                 <div>
 
 
-                                                    <Link className="view-files add-funds" to="#">Add Funds</Link>
+                                                    <button className="view-files add-funds" onClick={()=>{fundBundlr()}}>Add Funds</button>
 
                                                 </div>
                                             </div>

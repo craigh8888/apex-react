@@ -157,7 +157,7 @@ p.last-paid {
     color: #00224C;
 }
 
-a.view-files.add-funds {
+.view-files .add-funds {
     color: #017B95;
     font-size: 10px;
     line-height: 15px;

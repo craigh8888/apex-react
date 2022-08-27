@@ -13,6 +13,9 @@ import immer from 'immer'
 // import { ReactComponent as Discord } from '../discord.svg';
 // import { ReactComponent as M } from '../m.svg';
 
+
+
+
 export default function UploadFiles({bundlr,address,query, newFiles, setNewFiles, filePreviews, setFilePreviews, uploadFiles, newFilesData, setNewFilesData}) {
 
    const [loading, setLoading] = useState(false)

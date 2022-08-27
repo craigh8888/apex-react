@@ -6,7 +6,7 @@ import ViewerOuterSettings from './viewerouter/viewerOuterSettings.js'
 import NavbarFiles from './navbarFiles';
 
 
-export default function Settings({wallet}) {
+export default function Settings({bundlrAddress, bundlrBalance, fundBundlr, setOnramper}) {
 
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
@@ -28,14 +28,21 @@ export default function Settings({wallet}) {
         <div>
             {isDesktop ? (
                 <>
-                    <ViewerInnerSettings wallet={wallet}/>
+                    <ViewerInnerSettings 
+                    bundlrAddress={bundlrAddress} 
+                    bundlrBalance={bundlrBalance}
+                    fundBundlr={fundBundlr}
+                    setOnramper={setOnramper}
+                    />
                 </>
             ) : (
                 <>
                     <div className="mobile-wrap">
                         <NavbarFiles />
 
-                        <ViewerOuterSettings />
+                        <ViewerOuterSettings 
+                        bundlrBalance={bundlrBalance}
+                        />
                     </div>
 
                 </>

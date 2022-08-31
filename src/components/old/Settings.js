@@ -28,7 +28,7 @@ export default function Settings({ viewName, viewDesc, bundlrAddress, bundlrBala
         <div>
             {isDesktop ? (
                 <>
-                    <SidebarMenu />
+                  
                     <ViewerOuterSettings
                         viewName={"Settings"}
                         viewDesc={"You can edit your Billing, Account Information and Notifications here."}

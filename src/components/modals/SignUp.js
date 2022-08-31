@@ -166,7 +166,6 @@ export default function SignUp({ onboarded, setOnboarded, wallet, setWallet }) {
 
                     </div>
                 </div>
-    {this.betterPaster()}
                 : <></>}
         
 

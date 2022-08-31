@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/App.css';
-import SidebarMenu from './menus/SidebarMenu';
-import ViewerInnerSettings from './viewerinner/viewerInnerSettings.js'
+import SidebarMenu from './menus/SidebarMenu.js';
+// import ViewerInnerSettings from './viewerinner/viewerInnerSettings.js'
 import ViewerOuterSettings from './viewerouter/viewerOuterSettings.js'
 import NavbarFiles from './navbarFiles';
 
 
-export default function Settings({bundlrAddress, bundlrBalance, fundBundlr, setOnramper}) {
+export default function Settings({ viewName, viewDesc, bundlrAddress, bundlrBalance, fundBundlr, setOnramper }) {
 
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
@@ -28,20 +28,34 @@ export default function Settings({bundlrAddress, bundlrBalance, fundBundlr, setO
         <div>
             {isDesktop ? (
                 <>
-                    <ViewerInnerSettings 
-                    bundlrAddress={bundlrAddress} 
-                    bundlrBalance={bundlrBalance}
-                    fundBundlr={fundBundlr}
-                    setOnramper={setOnramper}
+                    <SidebarMenu />
+                    <ViewerOuterSettings
+                        viewName={"Settings"}
+                        viewDesc={"You can edit your Billing, Account Information and Notifications here."}
+                        bundlrAddress={bundlrAddress}
+                        bundlrBalance={bundlrBalance}
+                        fundBundlr={fundBundlr}
+                        setOnramper={setOnramper}
                     />
+                    {/* <ViewerInnerSettings
+                        viewName={"Settings"}
+                        viewDesc={"You can edit your Billing, Account Information and Notifications here."}
+                        bundlrAddress={bundlrAddress}
+                        bundlrBalance={bundlrBalance}
+                        fundBundlr={fundBundlr}
+                        setOnramper={setOnramper}
+                    /> */
+                        /* This was replaced with ViewerOuterSettings to have the outer html */
+
+                    }
                 </>
             ) : (
                 <>
                     <div className="mobile-wrap">
                         <NavbarFiles />
 
-                        <ViewerOuterSettings 
-                        bundlrBalance={bundlrBalance}
+                        <ViewerOuterSettings
+                            bundlrBalance={bundlrBalance}
                         />
                     </div>
 

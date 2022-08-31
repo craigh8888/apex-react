@@ -77,7 +77,11 @@
     transform: rotate(360deg);
   }
 }
-
+.button-wrap,
+a.create-acc {
+  z-index: 99;
+  position: relative;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 

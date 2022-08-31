@@ -9,6 +9,9 @@
   justify-content: center;
 
 }
+.input {
+  text-indent: 15px;
+}
 .home .home-overlay{
   background: url('../images/overlay-bg.png') center center/cover no-repeat;
   object-fit: cover;

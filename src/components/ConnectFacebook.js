@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+
 import '../styles/ConnectFacebook.css';
 
 import { ReactComponent as FbLogo } from '../images/facebook.svg';
@@ -8,13 +8,10 @@ import { ReactComponent as FbLogo } from '../images/facebook.svg';
 function ConnectFacebook() {
     return (
         <div className='btns-fb'>
-            <Button
-                className='btns'
-                buttonStyle='btn--outline'
-                buttonSize='btn--large'
+            <button className='btns btn--outline btn--large'
             >
                 <FbLogo />  Sign in with Facebook
-            </Button >
+            </button >
         </div>
     );
 }

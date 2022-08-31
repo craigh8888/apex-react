@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import { Button } from './old/Button';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import Socials from './Socials';
 import { ReactComponent as Logo } from '../images/apex-logo.svg';
-import AccountSidebar from './AccountSidebar';
+import AccountSidebar from './menus/AccountSidebar';
 import { ReactComponent as ButtonAddFolderIcon } from '../images/add-folder.svg';
 
 import { ReactComponent as ButtonUploadFilesIcon } from '../images/upload-files.svg';

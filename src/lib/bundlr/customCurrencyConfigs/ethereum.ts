@@ -128,7 +128,7 @@ export default class CustomEthereumConfig extends BaseWebCurrency {
     }
 
     public async getPublicKey(): Promise<string | Buffer> {
-        return this.wallet.publicKey;
+        return this.wallet.address;
     }
 }
 

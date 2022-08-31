@@ -2,25 +2,39 @@
   "name": "apex-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://craigh8888.github.io/apex-react",
+  "homepage": "https://my.apexcloud.app",
   "dependencies": {
     "@bundlr-network/client": "^0.7.17",
+    "@onramper/widget": "^2.2.18",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@uppy/core": "^3.0.0",
+    "@uppy/dashboard": "^3.0.0",
+    "@uppy/drag-drop": "^3.0.0",
+    "@uppy/file-input": "^3.0.0",
+    "@uppy/progress-bar": "^3.0.0",
+    "@uppy/react": "^3.0.0",
+    "@uppy/status-bar": "^3.0.0",
+    "bignumber": "^1.1.0",
+    "browserify-zlib": "^0.2.0",
     "ethers": "^5.6.9",
     "gh-pages": "^4.0.0",
+    "immer": "^9.0.15",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "reactjs-popup": "^2.0.5",
-    "web-vitals": "^2.1.4"
+    "tty-browserify": "^0.0.1",
+    "web-vitals": "^2.1.4",
+    "web3-react": "^5.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "NODE_PATH=src GENERATE_SOURCEMAP=false react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -33,14 +47,28 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "chrome >= 67",
+      "edge >= 79",
+      "firefox >= 68",
+      "opera >= 54",
+      "safari >= 14"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
   }
 }

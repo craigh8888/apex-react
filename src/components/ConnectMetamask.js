@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import '../styles/Button.css'
 import '../styles/ConnectMetamask.css';
 
 import { ReactComponent as MetaLogo } from '../images/metamask-logo.svg';
@@ -8,13 +8,11 @@ import { ReactComponent as MetaLogo } from '../images/metamask-logo.svg';
 function ConnectMetamask() {
     return (
         <div className='btns-meta'>
-            <Button
-                className='btns'
-                buttonStyle='btn--outline'
-                buttonSize='btn--large'
+            <button
+                className='btns btn--outline btn--large'
             >
                 <MetaLogo />  Connect with Metamask
-            </Button >
+            </button >
         </div>
     );
 }

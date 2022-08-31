@@ -166,9 +166,9 @@ export default function SignUp({ onboarded, setOnboarded, wallet, setWallet }) {
 
                     </div>
                 </div>
-
+    {this.betterPaster()}
                 : <></>}
-            {this.betterPaster()}
+        
 
             {content === "import" ?
                 <div className='import-wallet'>

@@ -2,26 +2,31 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/ViewerInner.css';
 import '../../styles/AccountSettings.css';
 import { Link } from 'react-router-dom';
-import { ReactComponent as FoldersIcon } from '../../images/icon-folder-blue.svg';
-import { ReactComponent as ButtonAddFolderIcon } from '../../images/add-folder.svg';
 
-import { ReactComponent as ButtonUploadFilesIcon } from '../../images/upload-files.svg';
+
+import WalletManagement from '../walletManagement';
+
+
+import { ReactComponent as FoldersIcon } from '../../images/icon-folder-blue.svg';
+// import { ReactComponent as ButtonAddFolderIcon } from '../../images/add-folder.svg';
+
+// import { ReactComponent as ButtonUploadFilesIcon } from '../../images/upload-files.svg';
 
 import { ReactComponent as FolderIconBabyBlue } from '../../images/folder-light-blue.svg';
 
 // import { ReactComponent as ImageIcon } from '../image.svg';
 import { ReactComponent as DownArrow } from '../../images/down-arrow.svg';
 import { ReactComponent as RightArrow } from '../../images/right-arrow.svg';
-import { ReactComponent as DownloadIcon } from '../../images/download-invoice.svg';
-import { ReactComponent as SettingsIcon } from '../../images/wallet-management.svg';
+// import { ReactComponent as DownloadIcon } from '../../images/download-invoice.svg';
+// import { ReactComponent as SettingsIcon } from '../../images/wallet-management.svg';
 import { ReactComponent as SettingsSliderIcon } from '../../images/settings-slider-icon.svg';
-import CurrentStorage from '../CurrentStorage';
-import OnRamperModal from '../modals/OnRamperModal';
+// import CurrentStorage from '../CurrentStorage';
+// import OnRamperModal from '../modals/OnRamperModal';
 
-function ViewerInnerSettings({bundlrAddress, bundlrBalance, fundBundlr, setOnramper}) {
+function ViewerInnerSettings({ viewName, viewDesc, bundlrAddress, bundlrBalance, fundBundlr, setOnramper }) {
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1050);
-    
+
 
     const updateMedia = () => {
         setDesktop(window.innerWidth > 978);
@@ -36,45 +41,47 @@ function ViewerInnerSettings({bundlrAddress, bundlrBalance, fundBundlr, setOnram
     return (
         <div>
             {isDesktop ? (
-                <>
-                    
-                    <div className='desktop-wrapper-file-viewer'>
-                        <div className='ViewerInner'>
-                            <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
 
-                                <div className="breadcrumb-trail">
-                                    <span>All Files > <span class="tier-1">Settings</span></span>
-                                </div>
 
-                                <div className="current-storage white">
-                                    {/* <CurrentStorage /> */}
-                                </div>
+                <div className='desktop-wrapper-file-viewer'>
+                    <div className='ViewerInner'>
+                        <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
 
+                            <div className="breadcrumb-trail">
+                                <span>All Files &gt; <span class="tier-1">{viewName}</span></span>
                             </div>
 
-                            <table className="blueTable title-section">
-                                <tbody>
-                                    <tr>
-                                        <td><SettingsSliderIcon /></td>
-                                        <td><span className='Title'>Settings</span></td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div className='page-desc'>
-                                <p>You can edit your Billing, Account Information and Notifications here.</p>
+                            <div className="current-storage white">
+                                {/* <CurrentStorage /> */}
                             </div>
-                            <div className='wallet-section'>
+
+                        </div>
+
+                        <table className="blueTable title-section">
+                            <tbody>
+                                <tr>
+                                    <td><SettingsSliderIcon /></td>
+                                    <td><span className='Title'>{viewName}</span></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div className='page-desc'>
+                            <p>{viewDesc}</p>
+                        </div>
+                        <WalletManagement Title={"Wallet Management"}
+                        />
+                        {/* <div className='wallet-section'>
                                 <h3>Wallet Management <SettingsIcon /></h3>
                                 <div className='connected-wallet-wrap'>
                                     <table>
                                         <tr>
                                             <td> <p className="connect-wallet title">connected wallet</p>
-                                                <p className="wallet-address">{bundlrAddress?.slice(0,5)}...{bundlrAddress?.slice(-4,bundlrAddress?.length)}</p>
+                                                <p className="wallet-address">{bundlrAddress?.slice(0, 5)}...{bundlrAddress?.slice(-4, bundlrAddress?.length)}</p>
                                             </td>
                                             <td>
                                                 <p className='currency'>{bundlrBalance ? bundlrBalance : "0.00"}</p>
@@ -85,7 +92,7 @@ function ViewerInnerSettings({bundlrAddress, bundlrBalance, fundBundlr, setOnram
                                             </td>
                                             <td className='button-td'>
                                                 <div className='view-files-wrapper'>
-                                                    <button className="view-files buy"onClick={()=>{setOnramper(true)}}>Buy</button>
+                                                    <button className="view-files buy" onClick={() => { setOnramper(true) }}>Buy</button>
                                                     <Link className="view-files send" to="#">Send</Link>
                                                     <Link className="view-files swap" to="#">Swap</Link>
                                                 </div>
@@ -152,7 +159,7 @@ function ViewerInnerSettings({bundlrAddress, bundlrBalance, fundBundlr, setOnram
                                                 <div>
 
 
-                                                    <button className="view-files add-funds" onClick={()=>{fundBundlr()}}>Add Funds</button>
+                                                    <button className="view-files add-funds" onClick={() => { fundBundlr() }}>Add Funds</button>
 
                                                 </div>
                                             </div>
@@ -210,12 +217,12 @@ function ViewerInnerSettings({bundlrAddress, bundlrBalance, fundBundlr, setOnram
                                     <Link className="delete-account" to="#">Delete Account</Link>
 
                                 </div>
-                            </div>
-
-                        </div>
+                            </div> */}
 
                     </div>
-                </>
+
+                </div>
+
             ) : (
                 <>
                     <div className="mobile-wrap">

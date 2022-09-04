@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/menus/Navbar';
 import {ethers} from 'ethers'
 import BigNumber from 'bignumber.js';
-
+import './styles/paginate.css';
 import './styles/App.css';
 import Home from './pages/Home';
 import SignUp from './components/modals/SignUp'

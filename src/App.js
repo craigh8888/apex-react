@@ -1,9 +1,10 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/menus/Navbar';
-import {ethers} from 'ethers'
+import { ethers } from 'ethers'
+import axios from 'axios';
 import BigNumber from 'bignumber.js';
-
+import './styles/paginate.css';
 import './styles/App.css';
 import Home from './pages/Home';
 import SignUp from './components/modals/SignUp'
@@ -37,169 +38,173 @@ function App() {
 
 
 
-  useEffect(()=>{
-    if (loggedIn){
+  useEffect(() => {
+    if (loggedIn) {
       console.log("initializing bundlr")
       console.log(window.ethereum)
       initBundlr()
+
     }
+  }, [loggedIn, onboarded])
 
 
-  },[loggedIn,onboarded])
 
-  async function initBundlr () {
+
+  async function initBundlr() {
     await window.ethereum.enable()
-  
+
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     await provider._ready()
-  
+
     const bundler = new WebBundlr("https://node1.bundlr.network", "matic", provider)
     await bundler.ready()
-    
+
     setBundlr(bundler)
     setBundlrAddress(bundler.address.toString())
     console.log(bundler.address)
     fetchBalance()
   }
 
-  async function fundBundlr () {
+  async function fundBundlr() {
     alert("funding")
     if (fundAmount) {
-    const amountParsed = parseInput(fundAmount)
-    let response = await bundlr.fund(amountParsed)
-    fetchBalance()
-    return console.log('Wallet funded: ', response)
-    
-    
+      const amountParsed = parseInput(fundAmount)
+      let response = await bundlr.fund(amountParsed)
+      fetchBalance()
+      return console.log('Wallet funded: ', response)
+
+
+    }
+
   }
-     
-    }
 
 
-    function parseInput (input) {
-      const conv = new BigNumber(input).multipliedBy(bundlr.currencyConfig.base[1])
-      if (conv.isLessThan(1)) {
-        console.log('error: value too small')
-        return
-      } else {
-        return conv
-      }
+  function parseInput(input) {
+    const conv = new BigNumber(input).multipliedBy(bundlr.currencyConfig.base[1])
+    if (conv.isLessThan(1)) {
+      console.log('error: value too small')
+      return
+    } else {
+      return conv
     }
-    async function fetchBalance () {
-      const bal = await bundlr.getLoadedBalance()
-      console.log('bal: ', ethers.utils.formatEther(bal.toString()))
-      const format = ethers.utils.formatEther(bal.toString()) 
-      if (format.length < 6){setBundlrBalance(format)} else {
-        const trim = format.slice(0, 6)
-        setBundlrBalance(trim)
-      }
-  
+  }
+
+  async function fetchBalance() {
+    const bal = await bundlr.getLoadedBalance()
+    console.log('bal: ', ethers.utils.formatEther(bal.toString()))
+    const format = ethers.utils.formatEther(bal.toString())
+    if (format.length < 6) { setBundlrBalance(format) } else {
+      const trim = format.slice(0, 6)
+      setBundlrBalance(trim)
     }
 
-  
+  }
+
+
 
   return (
     <>
-     
-       {/* <Navbar /> */}
-        <Routes>
-          <Route path="*" element={<Home />} />
-          <Route exact path='/apex-react/' element={
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
-          />} />
-          
-          <Route path="/apex-react/team" element={<Team />} />
-          <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
-          <Route path="/apex-react/Dashboard" element={loggedIn ? 
-          <Dashboard 
-          bundlr={bundlr}  
-          bundlrBalance={bundlrBalance}
-          fundBundlr={fundBundlr}   
-          fetchBalance={fetchBalance}
-          bundlrAddress={bundlrAddress}       /> 
-          :  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
-          address={wallet?.address}
+
+      {/* <Navbar /> */}
+      <Routes>
+        <Route path="*" element={<Home />} />
+        <Route exact path='/apex-react/' element={
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
           />} />
 
-          <Route path="/apex-react/AllFiles" element={loggedIn ? <AllFiles /> :  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
+        <Route path="/apex-react/team" element={<Team />} />
+        <Route path="/apex-react/advisory-boards" element={<AdvisoryBoard />} />
+        <Route path="/apex-react/Dashboard" element={loggedIn ?
+          <Dashboard
+            bundlr={bundlr}
+            bundlrBalance={bundlrBalance}
+            fundBundlr={fundBundlr}
+            fetchBalance={fetchBalance}
+            bundlrAddress={bundlrAddress}
+          />
+          :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
+            address={wallet?.address}
           />} />
-          <Route path="/apex-react/NFTFolder" element={loggedIn ? <NFTFolder />:  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
+
+        <Route path="/apex-react/AllFiles" element={loggedIn ? <AllFiles /> :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
           />} />
-          <Route path="/apex-react/folders" element={loggedIn ? <Folders />:  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
+        <Route path="/apex-react/NFTFolder" element={loggedIn ? <NFTFolder /> :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
           />} />
-          <Route path="/apex-react/products" element={loggedIn ? <Products />:  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
+        <Route path="/apex-react/folders" element={loggedIn ? <Folders /> :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
           />} />
-          <Route path="/apex-react/favourites" element={loggedIn ? <Favourites />:  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
+        <Route path="/apex-react/products" element={loggedIn ? <Products /> :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
           />} />
-          <Route path="/apex-react/settings" element={loggedIn ? <Settings />:  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
+        <Route path="/apex-react/favourites" element={loggedIn ? <Favourites /> :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
           />} />
-          <Route path="/apex-react/media-library" element={loggedIn ? <FolderMedia />:  
-          <Home 
-          onboarded={onboarded}
-          setOnboarded={setOnboarded}
-          wallet={wallet}
-          setWallet={setWallet}
-          loggedIn={loggedIn}
-          setLoggedIn={setLoggedIn}
+        <Route path="/apex-react/settings" element={loggedIn ? <Settings /> :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
           />} />
-          
-        </Routes>
-      
+        <Route path="/apex-react/media-library" element={loggedIn ? <FolderMedia /> :
+          <Home
+            onboarded={onboarded}
+            setOnboarded={setOnboarded}
+            wallet={wallet}
+            setWallet={setWallet}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
+          />} />
+
+      </Routes>
+
 
     </>
   );

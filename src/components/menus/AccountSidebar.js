@@ -20,7 +20,7 @@ function AccountSidebar() {
                     <div>
 
                         <span>John S</span>
-                        <img src={AccountImage} />
+                        <img src={AccountImage} alt=""/>
                         {isActive ? <UpArrow /> : <DownArrow />}
 
                     </div>

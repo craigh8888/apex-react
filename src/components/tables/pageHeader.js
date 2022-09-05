@@ -29,22 +29,22 @@ const PageHeader = ({ headerNames, viewName, button1Class, button2Class, button1
                 <tbody>
                     <tr>
                         <td>
-                            {viewName == 'Settings' &&
+                            {viewName === 'Settings' &&
                                 <SettingsSliderIcon />
                             }
-                            {viewName == 'files' &&
+                            {viewName === 'files' &&
                                 <FoldersIcon />
                             }
-                            {viewName == 'Archive' &&
+                            {viewName === 'Archive' &&
                                 <FoldersIcon />
                             }
-                            {viewName == 'Folders' &&
+                            {viewName === 'Folders' &&
                                 <FoldersIcon />
                             }
-                            {viewName == 'Favourites' &&
+                            {viewName === 'Favourites' &&
                                 <FoldersIcon />
                             }
-                            {viewName == 'All Files' &&
+                            {viewName === 'All Files' &&
                                 <FoldersIcon />
                             }
                         </td>

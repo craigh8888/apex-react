@@ -137,8 +137,8 @@ const Table = ({ headerNames }) => {
 
                     <table className='blueTable table-curved'>
                         <thead>
-                            <tr>
-                                {headerNames?.map((name, index) => { return <th>{name}</th> })}
+                            <tr key="1">
+                                {headerNames?.map((name, index) => { return <th >{name}</th> })}
                             </tr>
                         </thead>
                         {/* <thead>
@@ -150,7 +150,7 @@ const Table = ({ headerNames }) => {
                                 dataTable.map((item, index) => (
                                     <tr key={item.id}>
 
-                                        <td>{item.id}</td>
+                                        <td >{item.id}</td>
 
 
 
@@ -158,7 +158,7 @@ const Table = ({ headerNames }) => {
                                         <td >{item.ParentFolder}</td>
                                         <td >View Folder Comp</td>
                                         {/* need to pass in stuff here */}
-                                        <td></td>
+                                        <td ></td>
 
                                     </tr>
                                 ))

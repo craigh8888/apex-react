@@ -26,10 +26,17 @@ const Table = ({ headerNames }) => {
             const data = await res.json();
             const total = res.headers.get("x-total-count");
             setPageCount(Math.ceil(total / limit));
-            setShowResults(true);
-            setDataTable(data);
 
+            setDataTable(data);
+            if (data.length < 10) {
+                console.log('Data Length is less than 0 - Hide Pagination');
+                setShowResults(false);
+
+            } else {
+                setShowResults(true);
+            }
         }
+
 
 
         // const getFiles = async () => {
@@ -50,7 +57,7 @@ const Table = ({ headerNames }) => {
             `https://jsonplaceholder.typicode.com/todos?_page=${currentPage}&_limit=${limit}`
         );
         const data = await res.json();
-        if (data.length == 0) {
+        if (data.length < 10) {
             console.log('Data Length is less than 0 - Hide Pagination');
             setShowResults(false);
             var Pagination = document.getElementsByClassName('pagination');
@@ -117,7 +124,7 @@ const Table = ({ headerNames }) => {
                         previousLabel={'Previous'}
                         nextLabel={'next'}
                         // breakLabel={'...'}
-                        pageCount={20}
+                        pageCount={pageCount}
                         marginPagesDisplayed={3}
                         pageRangeDisplayed={4}
                         onPageChange={handlePageClick}

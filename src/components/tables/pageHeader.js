@@ -22,7 +22,7 @@ const PageHeader = ({ headerNames, viewName, button1Class, button2Class, button1
                     {viewName == 'Settings' &&
                         <span className='breadcrumb-parent' onClick={() => { setInnerContent("allFiles"); }}>All Files &gt;</span>
                     }
-                    <span class="tier-1">{viewName}</span></span>
+                    <span className="tier-1">{viewName}</span></span>
             </div>
 
             <table className='blueTable title-section'>

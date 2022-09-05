@@ -72,7 +72,7 @@ const Table = ({ headerNames }) => {
         console.log(data.selected);
 
         let currentPage = data.selected + 1;
-
+        const elementKey = 'table-items';
         const filesFromServer = await fetchFiles(currentPage);
 
         setDataTable(filesFromServer);
@@ -94,7 +94,7 @@ const Table = ({ headerNames }) => {
                     <table className='blueTable table-curved'>
                         <thead>
                             <tr>
-                                {headerNames?.map((name, index) => { return <th>{name}</th> })}
+                                {headerNames?.map((name, index) => { return <th key={name.id}> {name}</th> })}
                             </tr>
                         </thead>
                         {/* <thead>
@@ -104,9 +104,10 @@ const Table = ({ headerNames }) => {
 
                             {
                                 dataTable.map((item, index) => (
+
                                     <tr key={item.id}>
 
-                                        <td>{item.id}</td>
+                                        <td >{item.id}</td>
 
 
 
@@ -146,7 +147,7 @@ const Table = ({ headerNames }) => {
         }
 
 
-    </div>;
+    </div >;
 }
 
 export default Table

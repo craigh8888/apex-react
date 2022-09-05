@@ -55,8 +55,15 @@ const Table = ({ headerNames }) => {
             const data2 = await res2.json();
             const total2 = res2.headers.get("x-total-count");
             setPageCount(Math.ceil(total2 / limit));
-            setShowResults(true);
+
             setDataTable(data2);
+
+            if (data2.length < 10) {
+                console.log('Data Length is less than 0 - Hide Pagination');
+                setShowResults(false);
+            } else {
+                setShowResults(true);
+            }
             // console.log('local data', data2);
             // axios.get('')
             //     .then(resp => {
@@ -91,10 +98,10 @@ const Table = ({ headerNames }) => {
         //     `https://jsonplaceholder.typicode.com/todos?_page=${currentPage}&_limit=${limit}`
         // );
         const res = await fetch(
-            `http://localhost:3500/files?type="folder"&_page=${currentPage}&_limit=${limit}`
+            `http://localhost:3500/files?type=folder&_page=${currentPage}&_limit=${limit}`
         );
         const data2 = await res.json();
-        if (data2.length == 0) {
+        if (data2.length < 10) {
             console.log('Data Length is less than 0 - Hide Pagination');
             setShowResults(false);
             var Pagination = document.getElementsByClassName('pagination');

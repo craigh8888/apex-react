@@ -39,7 +39,7 @@ export default class percentagewheel extends Component {
                     #017B95 ${progressValue * 3.6}deg,
                     #D6ECFD ${progressValue * 3.6}deg
               )`;
-                if (progressValue == progressEndValue) {
+                if (progressValue === progressEndValue) {
                     clearInterval(progress);
                 }
             }, speed);

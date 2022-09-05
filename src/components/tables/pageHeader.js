@@ -15,11 +15,11 @@ const PageHeader = ({ headerNames, viewName, button1Class, button2Class, button1
 
                 <span>
 
-                    {viewName == 'Archive' &&
+                    {viewName === 'Archive' &&
                         <span className='breadcrumb-parent' onClick={() => { setInnerContent("allFiles"); }}>All Files &gt;</span>
                     }
 
-                    {viewName == 'Settings' &&
+                    {viewName === 'Settings' &&
                         <span className='breadcrumb-parent' onClick={() => { setInnerContent("allFiles"); }}>All Files &gt;</span>
                     }
                     <span className="tier-1">{viewName}</span></span>

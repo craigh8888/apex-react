@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import './current-storage.css';
+import '../styles/current-storage.css';
 import Percentagewheel from './PercentageWheel';
 import { Link } from 'react-router-dom';
 

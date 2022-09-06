@@ -1,9 +1,9 @@
 import React from 'react';
-import '../App.css';
+import '../styles/App.css';
 import { Button } from './Button';
-import './HeroSection.css';
+import '../styles/HeroSection.css';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Lglogo } from '../apex-logo-lrge.svg';
+import { ReactComponent as Lglogo } from '../images/apex-logo-lrge.svg';
 import LoginBox from './LoginBox';
 
 function HeroSection() {

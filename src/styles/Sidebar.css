@@ -1,0 +1,46 @@
+.sidebar-wrap {
+    width: 100%;
+    max-width: 179px;
+    float: left;
+}
+
+.sidebar-wrap {
+    background-color: #040936;
+    height: 100vh;
+    /* min-height: 992px; */
+    position: relative;
+}
+
+.side-bar-lowerwrap {
+    margin-top: auto;
+    position: relative;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #040936;
+    padding: 0.5em 0;
+}
+
+.table-curved tbody td:nth-of-type(6) {
+    text-align: right;
+}
+
+.sidebar-top {
+    padding: 14px 9px 11.55px 9px;
+}
+
+p.poweredby {
+    font-size: 12px;
+    color: #fff;
+    opacity: .25;
+    margin: 8.5px 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+p.poweredby svg {
+    margin-left: 6.72px;
+}

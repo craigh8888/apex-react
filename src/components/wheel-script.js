@@ -28,7 +28,7 @@ class comp1 extends React.Component {
               #4d5bf9 ${progressValue * 3.6}deg,
               #cadcff ${progressValue * 3.6}deg
           )`;
-            if (progressValue == progressEndValue) {
+            if (progressValue === progressEndValue) {
                 clearInterval(progress);
             }
         }, speed);

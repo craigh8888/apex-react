@@ -3,7 +3,7 @@ import '../styles/App.css';
 import SidebarMenu from './menus/SidebarMenu';
 import ViewerOuterMediaLibrary from './viewerouter/viewerOuterMediaLibrary';
 import NavbarFiles from './navbarFiles';
-import TempNav from './menus/tempNav';
+// import TempNav from './menus/tempNav';
 
 export default function MediaFolder() {
 
@@ -30,7 +30,7 @@ export default function MediaFolder() {
 
                     <SidebarMenu />
                     <ViewerOuterMediaLibrary />
-                    <TempNav />
+                    {/* <TempNav /> */}
                 </>
             ) : (
                 <>

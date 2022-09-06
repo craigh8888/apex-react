@@ -38,7 +38,7 @@ p.poweredby {
     margin: 8.5px 0 0 0;
     display: flex;
     justify-content: flex-start;
-    align-items: end;
+    align-items: flex-end;
 }
 
 p.poweredby svg {

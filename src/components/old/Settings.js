@@ -4,14 +4,10 @@ import SidebarMenu from './menus/SidebarMenu.js';
 // import ViewerInnerSettings from './viewerinner/viewerInnerSettings.js'
 import ViewerOuterSettings from './viewerouter/viewerOuterSettings.js'
 import NavbarFiles from './navbarFiles';
-import ViewerInnerSettings from './viewerinner/viewerInnerSettings.js';
-import PageHeader from './tables/pageHeader';
-import { ReactComponent as SettingsSliderIcon } from './../images/settings-slider-icon.svg';
 
 
+export default function Settings({ viewName, viewDesc, bundlrAddress, bundlrBalance, fundBundlr, setOnramper }) {
 
-
-export default function Settings({ viewName, viewDesc, bundlrAddress, bundlrBalance, fundBundlr, setOnramper, setInnerContent }) {
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
 
@@ -32,21 +28,8 @@ export default function Settings({ viewName, viewDesc, bundlrAddress, bundlrBala
         <div>
             {isDesktop ? (
                 <>
-                    <div className='ViewerInner'>
-
-                        <PageHeader
-                            viewName="Settings"
-                            button1Class="button-top add-folder"
-                            button2Class="button-top upload-files"
-                            button1Func=""
-                            button2Func=""
-                            button1Text="My Button"
-                            button2Text="My Other Button"
-                            setInnerContent={setInnerContent}
-                        />
-                    </div>
-                    {/* <SidebarMenu /> */}
-                    <ViewerInnerSettings
+                  
+                    <ViewerOuterSettings
                         viewName={"Settings"}
                         viewDesc={"You can edit your Billing, Account Information and Notifications here."}
                         bundlrAddress={bundlrAddress}
@@ -54,17 +37,6 @@ export default function Settings({ viewName, viewDesc, bundlrAddress, bundlrBala
                         fundBundlr={fundBundlr}
                         setOnramper={setOnramper}
                     />
-
-                    {/* <ViewerOuterSettings
-                        viewName={"Settings"}
-                        viewDesc={"You can edit your Billing, Account Information and Notifications here."}
-                        bundlrAddress={bundlrAddress}
-                        bundlrBalance={bundlrBalance}
-                        fundBundlr={fundBundlr}
-                        setOnramper={setOnramper}
-                    /> */}
-
-
                     {/* <ViewerInnerSettings
                         viewName={"Settings"}
                         viewDesc={"You can edit your Billing, Account Information and Notifications here."}

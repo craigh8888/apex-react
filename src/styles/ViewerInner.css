@@ -141,7 +141,7 @@ table.blueTable tfoot .links {
     display: flex;
     flex-shrink: unset;
     flex: 1;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .button-wrap .button-top svg {

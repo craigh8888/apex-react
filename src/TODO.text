@@ -1,0 +1,14 @@
+Atticus :
+    connect sign in to metamask modal
+    lock views if not bundlr not activated
+    adjust query for exponential back off
+
+Craig:
+    add dynamic table rows for files and folders
+    add file view component
+    add thumbnail view and selector to switch between list and thumbnail
+    add pagination component.
+
+Frank & Co:
+    replace current upload modal with Uppy
+    

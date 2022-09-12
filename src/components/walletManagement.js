@@ -175,5 +175,4 @@ function WalletManagement({ Title, bundlrAddress, bundlrBalance, fundBundlr, set
         </div>
     );
 }
-
 export default WalletManagement;

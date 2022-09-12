@@ -62,6 +62,35 @@ export default function SignUp({onboarded,setOnboarded,wallet,setWallet}) {
 
     }
    
+ async function pasteHandler() {
+        var test = document.getElementById("firstvalue");
+
+        test.addEventListener("paste", function (e) {
+            e.preventDefault();
+            // prevents default paste into input ('stops it from being filled with all text')
+
+            if (e.target.type === "text") {
+                var data = e.clipboardData.getData("Text");
+                // split clipboard text into single characters
+                data = data.split(/[ ,]+/);
+                // find all other text inputs
+                [].forEach.call(
+                    document.querySelectorAll(
+                        ".create-wallet-verify-grid input[type=text]"
+                    ),
+                    (node, index) => {
+                        // And set input value to the relative character
+
+                        node.value = data[index];
+                    }
+                );
+            }
+        });
+    }
+
+    useEffect(() => {
+        pasteHandler();
+    }, []);
 
     return (
         

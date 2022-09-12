@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as FoldersIcon } from '../../images/icon-folder-blue.svg';
 
 import { ReactComponent as FolderIconBabyBlue } from '../../images/folder-light-blue.svg';
-
+import PageHeader from '../tables/pageHeader';
 import { ReactComponent as ImageIcon } from '../../images/image.svg';
 import { ReactComponent as DownArrow } from '../../images/down-arrow.svg';
 import { ReactComponent as RightArrow } from '../../images/right-arrow.svg';
+import Table from '../tables/Table';
 
-
-function ViewerInner({viewName,buttons, headerNames,rows, pagination}) {
+function ViewerInner({ viewName, buttons, headerNames, rows, pagination }) {
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
 
@@ -31,19 +31,17 @@ function ViewerInner({viewName,buttons, headerNames,rows, pagination}) {
 
                     <div className='desktop-wrapper-file-viewer'>
                         <div className='ViewerInner'>
-                            <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
+                            {/* <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
                                 <div className="breadcrumb-trail">
                                     <span>{viewName}</span>
                                 </div>
                                 <div className="button-wrap">
-                                    {buttons?.map((button, index)=>{return button})}
-                                    {/*<button className=" button-top add-folder">Add Folder <ButtonAddFolderIcon /></button>
-                                    <button className="button-top upload-files">Upload Files  <ButtonUploadFilesIcon /></button>*/}
+                                    {buttons?.map((button, index) => { return button })}
                                 </div>
-                            </div>
+                            </div> */}
 
 
-                            <table className="blueTable title-section">
+                            {/* <table className="blueTable title-section">
                                 <tbody>
                                     <tr>
                                         <td><FoldersIcon /></td>
@@ -55,40 +53,21 @@ function ViewerInner({viewName,buttons, headerNames,rows, pagination}) {
                                         <td>&nbsp;</td>
                                     </tr>
                                 </tbody>
-                            </table>
-                            <table className="blueTable table-curved">
-                                <thead>
-                                    <tr>
-                                        {headerNames?.map((name,index)=>{return <th>{name}</th>})}
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                {rows?.length > 0 ? rows.map((row, index)=>{return row}) : <tr>
-                                    <td></td>
-                                    <td>No Files Found</td>
-                                    </tr>}
-                                </tbody>
-                            </table>
-                            <div className="pagination" >
-                                <table>
-                                    <tfoot>
-                                        <tr>
-                                            <td colSpan="7">
-                                                <div className="links">
-                                                    {pagination?.map((link, index)=>{return link})}
-                                                  {/*  <Link to="#">&laquo;</Link> 
-                                                    <Link className="active" to="#">1</Link> 
-                                                    <Link to="#">2</Link> 
-                                                    <Link to="#">...</Link> 
-                                                    <Link to="#">8</Link> 
-                                                    <Link to="#">9</Link> 
-                                                    <Link to="#">&raquo;</Link>*/}
-                                                    </div>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
+                            </table> */}
+                            <PageHeader
+                                viewName={viewName}
+                                button1Class="button-top add-folder"
+                                button2Class="button-top upload-files"
+                                button1Func=""
+                                button2Func=""
+                                button1Text="My Button"
+                                button2Text="My Other Button"
+
+                            />
+                            <Table headerNames={["Icon", "Name", "Folder", "Created,Size", "File Count", "View File", "Actions"]}
+                            />
+
+
                         </div>
 
                     </div>

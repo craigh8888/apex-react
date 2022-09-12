@@ -4,7 +4,7 @@ import '../../styles/AccountSettings.css';
 import { Link } from 'react-router-dom';
 
 
-import WalletManagement from '../walletManagement';
+import WalletManagement from '../walletManagement.js';
 
 
 import { ReactComponent as FoldersIcon } from '../../images/icon-folder-blue.svg';
@@ -47,9 +47,9 @@ function ViewerInnerSettings({ viewName, viewDesc, bundlrAddress, bundlrBalance,
                     <div className='ViewerInner'>
                         <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
 
-                            <div className="breadcrumb-trail">
+                            {/* <div className="breadcrumb-trail">
                                 <span>All Files &gt; <span class="tier-1">{viewName}</span></span>
-                            </div>
+                            </div> */}
 
                             <div className="current-storage white">
                                 {/* <CurrentStorage /> */}
@@ -57,7 +57,7 @@ function ViewerInnerSettings({ viewName, viewDesc, bundlrAddress, bundlrBalance,
 
                         </div>
 
-                        <table className="blueTable title-section">
+                        {/* <table className="blueTable title-section">
                             <tbody>
                                 <tr>
                                     <td><SettingsSliderIcon /></td>
@@ -69,7 +69,7 @@ function ViewerInnerSettings({ viewName, viewDesc, bundlrAddress, bundlrBalance,
                                     <td>&nbsp;</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> */}
                         <div className='page-desc'>
                             <p>{viewDesc}</p>
                         </div>
@@ -228,12 +228,9 @@ function ViewerInnerSettings({ viewName, viewDesc, bundlrAddress, bundlrBalance,
                     <div className="mobile-wrap">
                         <div className='ViewerInner'>
                             <div className="breadcrumbs-viewer" id="breadcrumbsViewer">
-
                                 <div className="breadcrumb-trail">
                                     <span>All Files</span>
                                 </div>
-
-
                             </div>
                             <table className="blueTable title-section">
                                 <tbody>
@@ -251,14 +248,8 @@ function ViewerInnerSettings({ viewName, viewDesc, bundlrAddress, bundlrBalance,
 
                             <table className="blueTable table-curved">
                                 <thead>
-
                                     <tr>
-
-
-
-
                                     </tr>
-
                                 </thead>
 
                                 <tbody>
